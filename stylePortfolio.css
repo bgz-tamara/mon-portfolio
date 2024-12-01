@@ -1,0 +1,748 @@
+/* POLICES */
+
+@font-face {
+    font-family: Manrope;
+    src: url(font-Manrope/Manrope-VariableFont_wght.ttf);
+
+}
+
+@font-face { /* Titre page d'accueil */
+    font-family: Miagara;
+    src: url(font-miagara/Miagara.ttf);
+}
+
+@font-face { /* Titre icones jeux */
+    font-family: Magic;
+    src: url(font-magic/Magic\ Hollow.ttf);
+}
+
+@font-face { /* Titre icones jeux */
+    font-family: Poppins;
+    src: url(font-poppins/poppins.regular.ttf);
+}
+
+ /* HTML */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 115px;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background:url('images_accueil/fondBlancCercle.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgb(255, 255, 255);
+    /* pour effet de soulignage du menu au survol : 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+    overflow-x: hidden;
+
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/*  BARRE DE NAV  */
+
+header { /* pas sûr que tout soit nécessaire */
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top:0;
+    width: 100%;
+    transition: background-color 0.4s ease-in-out ;
+    z-index: 100;
+}
+
+header.scrolled {
+    background-color: #fff;
+}
+/*logo : PORTFOLIO*/
+
+nav .logo {
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+    font-family: Manrope; 
+}
+
+
+.logo:hover{
+    transition: 0.1s ease-in-out; /*a voir pour faire transition stylé parce que ca ca marche pas*/
+    /*color: #ffffffee;
+    text-shadow:
+    -1.5px -1.5px 0 rgb(250, 250, 250),
+    1.5px -1.5px 0 rgb(250, 250, 250),
+    -1.5px 1.5px 0 rgb(250, 250, 250),
+    1.5px 1.5px 0 rgb(250, 250, 250);*/
+    opacity: 50%;
+}
+
+/*barre de nav : menus (accueil,contact..)*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+nav a {
+    color: rgb(11, 62, 106);
+    font-family: Poppins;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 15px;
+    padding-bottom: 5%;
+}
+
+nav .accueil a {
+    color: rgb(11, 62, 106);
+}
+
+nav>div:hover a{
+    color: #74777c;
+}  
+
+nav > div> .surligne:hover {
+    border-bottom: solid 1px #74777c;
+}
+
+nav .contact {
+    background-color: rgb(255, 255, 255); /* couleur violette :  rgb(113, 81, 157) et couleur fishia : rgb(174, 31, 133)*/
+    padding: 2px 3px;
+    border-radius: 20px;
+    color: rgb(11, 73, 128);
+}
+
+nav .contact a {
+    color: rgb(11, 62, 106);
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav .contact:hover {
+    background-color: rgb(11, 73, 128);
+    transition: all 0.5s ;
+}
+
+nav .contact:hover a {
+    color: #fff ;
+}
+
+header.scrolled nav .contact a {
+    color: white;
+    background: rgb(11, 62, 106);
+    border-radius: 20px;
+    padding: 2px 3px;
+}
+
+
+/*sous-menus*/
+    
+.sousMenu {
+    top: 59px;
+    /*border-radius: 0 0 10px 10px;*/
+    /*border-bottom: solid 1.5px rgb(75, 85, 131);*/
+    text-shadow: none;
+    height: 0; /* cette ligne plus les deux du dessous c'est pour que le menu déroulant glisse */
+	overflow: hidden;
+	transition: 1s all;
+    position: absolute;
+    border-radius: 0;
+    /*border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;*/
+    background-color: transparent;
+    border-left: groove 1px rgb(75, 85, 131);
+}
+
+.sousMenu a {
+    color: rgb(11, 62, 106);
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin: auto;
+}
+
+.sousMenu div {
+    padding: 15px 10px;
+}
+
+
+nav > .projets:hover .sousMenu {
+    height: 109px;  /* cette ligne c'est pour que le menu déroulant glisse */
+}
+
+nav > .projets:hover .sousMenu>div>a {
+    color: rgb(11, 62, 106);
+}
+
+nav >.projets>.sousMenu>div:hover a {
+    color:  #647b94;
+}
+
+header.scrolled .sousMenu {
+    background-color: #fff;
+    margin-left: -1.75%;
+    border: none;
+    width: 10%;
+}
+
+header.scrolled .sousMenu a {
+    width: 100%;
+    font-size: 0.9em;
+}
+
+
+
+
+/* PAGE D'ACCUEIL :: PARTIE 1 */
+
+
+.en-tete {
+    height: 550px;
+    margin: 6% 0 25% 2%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-position: center;
+}
+
+
+
+
+/* PARTIE BULLE BLANCHE SOUS TITRE */
+
+.cercleTitre {
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 27%;
+    height: 280px;
+    width: 280px;
+    background-color: rgba(250, 250, 250, 1);
+    border-radius: 50%;
+    box-shadow: -5px 0 15px rgb(0, 0, 0, 0.1);
+}
+
+
+/* PARTIE BULLES COLOREES SOUS ANIMATION ACCUEIL */
+
+.cercleImage1 {
+    color: rgba(241, 241, 241, 0.9);
+    position: absolute;
+    right: 6%;
+    top: 15%;
+    height: 400px;
+    width: 400px;
+    background-color: rgba(89, 112, 153, 0.547);
+    border-radius: 50%;
+    box-shadow: -5px 0 12px rgb(0, 0, 0, 0.2);
+}
+
+.cercleImage2 {
+    color: rgba(11, 62, 106, 0.363);
+    position: absolute;
+    right: 21%;
+    top: 51%;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(8, 31, 68, 0.835); /* rgb(48, 110, 165) */
+    border-radius: 50%;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* PARTIE TEXTE DE L'ACCUEIL */
+
+.texte_accueil { 
+    /* fond*/
+    height: 550px;
+    margin-bottom: 15%;
+    width: 120%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texte_accueil h1 p {
+    overflow: hidden;
+}
+
+.texte_accueil h1 span {
+    /* texte */
+    color: rgb(11, 62, 106);
+    Font-family: Miagara;
+    font-weight: 200;
+    font-size: 3em;
+    padding-bottom: 25px;
+    width: 70%;
+    text-align: start;
+    margin-left: 15%;
+
+/*     text-shadow: 7px 7px 11px black;
+ */    /* pour l'animation d'entrée de site : */
+    transform: translateY(400px);
+    display: block;
+    overflow: hidden;
+    animation: 3s titreAnime cubic-bezier(0, 0.55, 0.45, 1) 0.5s forwards;
+}
+
+@keyframes titreAnime {
+    100% {
+        transform: initial;
+    }
+}
+/*    animation: changeCouleur 4s ease-in-out alternate infinite;
+}
+  
+@keyframes changeCouleur {
+    100% { color: rgb(113, 81, 157); }
+}*/
+
+.texte_accueil>p {
+    /* texte */
+    color: rgb(11, 62, 106);
+    font-family: Poppins;
+    font-weight: 100;
+    font-size: 1.5em;
+    text-align: start;
+}
+
+.p1 {
+    width: 80%; 
+    padding-left: 5%;
+    padding-bottom: 0;
+}
+
+.p2 {
+    width: 80%;
+    padding-left: 45%; 
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.p3 {
+    width: 80%;
+    padding-left: 67%; 
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+/* PARTIE IMAGE DE L'ACCUEIL */
+
+.en-tete .img_accueil {
+   width: 65%;
+   background-color: transparent /* marron rgb(33, 22, 5) */;/*  rgba(14, 48, 104, 0.835) */
+   margin: -10% 0 0 0;
+}
+
+.gifAccueil {
+    width: 50%;
+    position: relative;
+    left: 22%;
+    top: 202px;
+    filter: drop-shadow(0 0 0.85rem rgb(0, 0, 0, 1));
+    animation: lampe 1s ease-in-out alternate infinite;
+}
+
+@keyframes lampe {
+    100% {
+        transform: translateY(10px);
+    }
+}
+/* ancienne dipsosition avec logo noir et blanc poue les icones jeux
+.bulle1{
+    background:url('images_accueil/sudokuIcone2.png')no-repeat top center/100%;
+    align-self: flex-start;
+}
+
+.bulle2 {
+    background:url('images_accueil/cartes-de-poker.png')no-repeat top center/100%;
+    align-self: center;
+}
+
+.bulle3 {
+    align-self: flex-end;
+    background:url('images_accueil/trainIcone.jpg') no-repeat top center/100%;
+}*/
+
+
+/* SECTION PARCOURS */
+
+
+#presentation-de-soi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(80%);
+    margin: 7% 3%;
+}
+
+#presentation-de-soi h2 {
+    color: rgb(11, 62, 106);
+    margin-bottom: 0;
+}
+
+.presentation-de-soi-bloc {
+    width: 95%;
+    height: 550px;
+    margin: 0 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation-de-soi .photoForm {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+}
+
+#presentation-de-soi .photoForm img {
+    border-radius: 20px 20px 50px 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    width: 400px;
+    height: 450px;
+    margin: auto;
+}
+
+#presentation-de-soi .formulaire {
+    width: 100%;
+    margin: auto;
+}
+
+#presentation-de-soi .p-presentation-de-soi, #footer .bloc-contact .bloc-numTel-Email p, #footer .bloc-contact .bloc-numTel-Email h2 {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 1.2em;
+}
+
+#presentation-de-soi .formulaire span {
+    color: rgb(11, 62, 106);
+}
+
+#footer {
+    background-color: rgb(11, 62, 106);
+    height: 400px;
+}
+
+#footer .bloc-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+#footer .bloc-contact .bloc-numTel-Email {
+    margin: 7% 0;
+}
+
+#footer .bloc-contact .bloc-numTel-Email h2{
+    color: rgb(28, 106, 173);
+}
+
+
+#footer .bloc-contact .bloc-numTel-Email p {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARTIE PROJET */
+
+.projet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    flex-direction: column;
+    height: 750px;
+    width: 80%;  
+    border-radius: 50px;
+/*     background: linear-gradient(to top, rgb(7, 38, 65) 73%, transparent); /* couleur bleu du tite de base rgb(11, 62, 106) */
+    background:  rgb(11, 62, 106);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* TITRE 'PROJETS' */
+
+.projet h2, #titre-qui-suis-je {
+    width: 100%;
+    margin: 3% 0 3% 0;
+    padding-left: -10%;
+    text-align: center;
+
+    color:rgb(255, 255, 255);
+    font-size: 4.3em;
+    font-weight: 300;
+    font-family: Miagara;
+    text-decoration: none
+}
+
+.pFinJ {
+    margin-left: 15%;
+}
+
+.pFinI {
+    margin-left: 24%;
+}
+
+.pS {
+    margin-left: 4%;
+}
+
+
+
+/* PARTIE ANIME */
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+}
+
+
+
+/* PARTIE JEUX */
+
+.sliderJ {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+}
+
+.jeux1Titre {
+    width: 20%;
+    padding: 0 3%;
+    border-right: solid 2px white;
+
+}
+
+.jeux1Titre p {
+    padding: 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color:rgb(255, 255, 255);
+    font-size: 5em;
+    font-weight: 300;
+    font-family: Miagara;
+    text-decoration: none;
+}
+
+.bulleJeux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+ /* JEUX SLIDER ICONES */
+
+ .boite_slider {
+    width: 320px;
+    overflow: hidden;
+    padding-bottom: 20px;
+ }
+
+.sliderI {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    margin-left: 40px;
+    gap: 80px;
+    animation: sliderJeux 15s infinite ease-in-out;
+}
+
+.sliderI img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+  /* JEUX SLIDER TEXTE */
+
+.texte_slider {
+    overflow: hidden;
+    width: 320px;
+    position: relative;
+}
+
+.sliderT {
+    display: flex;
+    animation: sliderJeux 15s infinite ease-in-out;
+}
+
+.sliderT a {
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    font-family: Miagara;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+}
+
+.sliderT:hover a {
+    color: #647b94;
+}
+
+/* ANIMATION DU SLIDE */
+
+ @keyframes sliderJeux {
+    0%, 
+    47%{
+        transform: translateX(0);
+    }
+    52%,
+    92% {
+        transform: translateX(-320px);
+    }
+    100%{
+        transform: translate(-320px);
+    }
+ }
+
+ /* PARTIE SITE */
+
+.sliderS {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+}
+
+.site1Titre {
+    width: 20%;
+    padding: 0 3%;
+    border-left: solid 2px white;
+}
+
+.site1Titre p {
+    padding: 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color:rgb(255, 255, 255);
+    font-size: 4.5em;
+    font-weight: 300;
+    font-family: Miagara;
+    text-decoration: none;
+}
+
+.bulleSite {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20%;
+}
+
+
+/* SITE SLIDER TEXTE */
+
+.texte_slider {
+    overflow: hidden;
+    width: 320px;
+    position: relative;
+}
+
+.sliderS .sliderT {
+    display: flex;
+    height: 120px;
+    animation: sliderJeux 15s infinite ease-in-out;
+}
+
+.sliderS .sliderT a {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 5% 0;
+    font-size: 2.4em;
+    color: white;
+    font-family: Miagara;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+}
+
+.sliderT:hover a {
+    color: #647b94;
+}
+
+ /* SITE SLIDER ICONES */
+
+ .sliderS .boite_slider {
+    width: 320px;
+    overflow: hidden;
+ }
+
+.sliderS .sliderI {
+    display: flex;
+    animation: sliderJeux 15s infinite ease-in-out;
+}
+
+.sliderS .sliderI img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
