@@ -1,0 +1,348 @@
+/* POLICES */
+
+@font-face {
+    font-family: Manrope;
+    src: url(font-Manrope/Manrope-VariableFont_wght.ttf);
+
+}
+
+@font-face { /* Titre page d'accueil */
+    font-family: Miagara;
+    src: url(font-miagara/Miagara.ttf);
+}
+
+@font-face { /* Titre icones jeux */
+    font-family: Magic;
+    src: url(font-magic/Magic\ Hollow.ttf);
+}
+
+@font-face { /* Titre icones jeux */
+    font-family: Poppins;
+    src: url(font-poppins/poppins.regular.ttf);
+}
+
+ /* HTML */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 135px;
+}
+
+/* BODY */
+body {
+    margin: auto;
+    padding: 0;
+    height: 100vh;
+    background:url('images_accueil/fondBlancCercle.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgb(255, 255, 255);
+    /* pour effet de soulignage du menu au survol : 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+    overflow-x: hidden;
+    max-width: 1920px;
+
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1300px;
+}
+
+
+/*  BARRE DE NAV  */
+
+header { /* pas sûr que tout soit nécessaire */
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top:0;
+    width: 100%;
+    transition: background-color 0.4s ease-in-out ;
+    z-index: 100;
+}
+
+header.scrolled {
+    background-color: #fff;
+}
+/*logo : PORTFOLIO*/
+
+nav .logo {
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.6);
+    font-family: Manrope; 
+}
+
+
+.logo:hover{
+    transition: 0.1s ease-in-out; /*a voir pour faire transition stylé parce que ca ca marche pas*/
+    /*color: #ffffffee;
+    text-shadow:
+    -1.5px -1.5px 0 rgb(250, 250, 250),
+    1.5px -1.5px 0 rgb(250, 250, 250),
+    -1.5px 1.5px 0 rgb(250, 250, 250),
+    1.5px 1.5px 0 rgb(250, 250, 250);*/
+    opacity: 50%;
+}
+
+/*barre de nav : menus (accueil,contact..)*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+nav a {
+    color: rgb(11, 62, 106);
+    font-family: Poppins;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 15px;
+    padding-bottom: 5%;
+}
+
+nav .accueil a {
+    color: rgb(11, 62, 106);
+}
+
+nav>div:hover a{
+    color: #74777c;
+}  
+
+nav > div> .surligne:hover {
+    border-bottom: solid 1px #74777c;
+}
+
+nav .contact {
+    background-color: rgb(255, 255, 255); /* couleur violette :  rgb(113, 81, 157) et couleur fishia : rgb(174, 31, 133)*/
+    padding: 2px 3px;
+    border-radius: 20px;
+    color: rgb(11, 73, 128);
+}
+
+nav .contact a {
+    color: rgb(11, 62, 106);
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav .contact:hover {
+    background-color: rgb(11, 73, 128);
+    transition: all 0.5s ;
+}
+
+nav .contact:hover a {
+    color: #fff ;
+}
+
+header.scrolled nav .contact a {
+    color: white;
+    background: rgb(11, 62, 106);
+    border-radius: 20px;
+    padding: 2px 3px;
+}
+
+
+/*sous-menus*/
+    
+.sousMenu {
+    top: 59px;
+    /*border-radius: 0 0 10px 10px;*/
+    /*border-bottom: solid 1.5px rgb(75, 85, 131);*/
+    text-shadow: none;
+    height: 0; /* cette ligne plus les deux du dessous c'est pour que le menu déroulant glisse */
+	overflow: hidden;
+	transition: 1s all;
+    position: absolute;
+    border-radius: 0;
+    /*border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;*/
+    background-color: transparent;
+    border-left: groove 1px rgb(75, 85, 131);
+}
+
+.sousMenu a {
+    color: rgb(11, 62, 106);
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin: auto;
+}
+
+.sousMenu div {
+    padding: 15px 10px;
+}
+
+
+nav > .projets:hover .sousMenu {
+    height: 109px;  /* cette ligne c'est pour que le menu déroulant glisse */
+}
+
+nav > .projets:hover .sousMenu>div>a {
+    color: rgb(11, 62, 106);
+}
+
+nav >.projets>.sousMenu>div:hover a {
+    color:  #647b94;
+}
+
+header.scrolled .sousMenu {
+    background-color: #fff;
+    margin-left: -1.75%;
+    border: none;
+    width: 10%;
+}
+
+header.scrolled .sousMenu a {
+    width: 100%;
+    font-size: 0.9em;
+}
+
+
+
+/* TITRE + TEXTE DE PRSENTATIION DU PROJET */
+
+#presentation-du-projet, #contribution-bloc, #presentation-next-studie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(11, 62, 106);
+
+    gap: 100px;
+    padding: 0 4%;
+
+    text-align: justify;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 1.2em;
+}
+
+#presentation-du-projet {
+    background-color: rgb(112, 130, 154);
+    color: rgb(255, 255, 255);
+}
+
+/* TITRE */
+#presentation-du-projet #titre-projet, #contribution-bloc #titre-projet, #presentation-next-studie #titre-projet {
+    width: 100%;
+    text-align: center;
+
+    color:rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 300;
+    font-family: Miagara;
+    text-decoration: none;
+    margin-bottom: 5%;
+    text-indent:0;
+}
+
+#presentation-du-projet #titre-projet {
+    padding-top: 2%;
+    color: #ffffff;
+}
+
+#presentation-du-projet #titre-projet {
+    margin-bottom: 4%;
+}
+
+
+/* IMAGE */
+
+#contribution-bloc .imgBox, #presentation-next-studie .imgBox  {
+    width: 50%;
+    height: 50%;
+    margin: 4% 0;
+}
+
+#contribution-bloc .img-contributiuon-bloc, #presentation-next-studie .imgProjetBloc {
+    width: 100%;
+    height: 100%;
+}
+#contribution-bloc .img-contributiuon-bloc img, #presentation-next-studie .imgProjetBloc img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 50px 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* PARAGRAPHE */
+#presentation-du-projet .presentation-du-projet-bloc {
+    width: 90%;
+    margin-bottom: 4%;
+}
+#contribution-bloc .presentation-du-projet-bloc, #presentation-next-studie .presentation-du-projet-bloc {
+    width: 35%;
+    text-indent:40px;
+}
+
+#contribution-bloc span, #presentation-next-studie span {
+    color: rgb(232, 166, 181);
+}
+
+#presentation-du-projet span {
+    color :rgb(11, 62, 106);
+    font-weight: 400;
+}
+
+/* BOUTON DE RETOUR EN HAUT A GAUCHE */
+
+.bouton-retour-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4% 0 2% 0;
+    gap: 40px;
+    background-color: rgb(11, 62, 106);
+    align-items: center;
+}
+
+.bouton-retour-area p {
+    color:rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 700;
+    font-family: Miagara;
+    text-indent:0;
+}
+
+.bouton-retour-area span {
+    color: rgb(232, 166, 181);
+}
+
+.bouton-retour-area a {
+    background-color: #e6e3e3;
+    border: 0.2px solid rgb(11, 62, 106);
+    border-radius: 20px;
+
+    padding: 10px;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    color: rgb(11, 62, 106);
+    font-weight: 500;
+    font-family: Manrope;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.bouton-retour-area a:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    background-color: #ffffff;
+}

@@ -25,12 +25,12 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 115px;
+    scroll-padding-top: 135px;
 }
 
 /* BODY */
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     height: 100vh;
     background:url('images_accueil/fondBlancCercle.jpg');
@@ -41,8 +41,7 @@ body {
     /* pour effet de soulignage du menu au survol : 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;*/
-    overflow-x: hidden;
-
+    max-width: 1920px;
 }
 
 main {
@@ -62,6 +61,7 @@ header { /* pas sûr que tout soit nécessaire */
     position: fixed;
     top:0;
     width: 100%;
+    max-width: 1920px;
     transition: background-color 0.4s ease-in-out ;
     z-index: 100;
 }
@@ -69,8 +69,9 @@ header { /* pas sûr que tout soit nécessaire */
 header.scrolled {
     background-color: #fff;
 }
-/*logo : PORTFOLIO*/
 
+
+/*logo : PORTFOLIO*/
 nav .logo {
     font-size: 2.5em;
     color: rgba(255, 255, 255, 0.8);
@@ -102,6 +103,7 @@ nav {
     gap: 50px;
     align-items: center;
     padding: 15px 60px;
+    max-width: 1920px;
 }
 
 nav a {
@@ -241,6 +243,7 @@ header.scrolled .sousMenu a {
     background-color: rgba(250, 250, 250, 1);
     border-radius: 50%;
     box-shadow: -5px 0 15px rgb(0, 0, 0, 0.1);
+    z-index: 0;
 }
 
 
@@ -250,7 +253,7 @@ header.scrolled .sousMenu a {
     color: rgba(241, 241, 241, 0.9);
     position: absolute;
     right: 6%;
-    top: 15%;
+    top: 200px;
     height: 400px;
     width: 400px;
     background-color: rgba(89, 112, 153, 0.547);
@@ -262,7 +265,7 @@ header.scrolled .sousMenu a {
     color: rgba(11, 62, 106, 0.363);
     position: absolute;
     right: 21%;
-    top: 51%;
+    top: 510px;
     height: 200px;
     width: 200px;
     background-color: rgba(8, 31, 68, 0.835); /* rgb(48, 110, 165) */
@@ -276,14 +279,13 @@ header.scrolled .sousMenu a {
 .texte_accueil { 
     /* fond*/
     height: 550px;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
     width: 120%;
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .texte_accueil h1 p {
@@ -328,6 +330,7 @@ header.scrolled .sousMenu a {
     font-weight: 100;
     font-size: 1.5em;
     text-align: start;
+    z-index: 1;
 }
 
 .p1 {
@@ -362,9 +365,14 @@ header.scrolled .sousMenu a {
 
 .gifAccueil {
     width: 50%;
-    position: relative;
+    position: absolute;
+    right: 8%;
+    top: 230px;
+    height: 300px;
+    width: 300px;
+    /*position: relative;
     left: 22%;
-    top: 202px;
+    top: 202px;*/
     filter: drop-shadow(0 0 0.85rem rgb(0, 0, 0, 1));
     animation: lampe 1s ease-in-out alternate infinite;
 }
@@ -391,8 +399,8 @@ header.scrolled .sousMenu a {
 }*/
 
 
-/* SECTION PARCOURS */
 
+/* SECTION QUI SUIS JE ? */
 
 #presentation-de-soi {
     display: flex;
@@ -400,7 +408,9 @@ header.scrolled .sousMenu a {
     justify-content: center;
     align-items: center;
     backdrop-filter: brightness(80%);
-    margin: 7% 3%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
 }
 
 #presentation-de-soi h2 {
@@ -410,33 +420,29 @@ header.scrolled .sousMenu a {
 
 .presentation-de-soi-bloc {
     width: 95%;
-    height: 550px;
-    margin: 0 3%;
+    height: 450px;
+    margin: 0;
+    gap: 50px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .formBox{
-    width: 75%;
+    max-width: 85%;
+    gap: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-#presentation-de-soi .photoForm {
-    width: 100%;
-    height: 90%;
-    margin: auto;
-}
 
 #presentation-de-soi .photoForm img {
     border-radius: 20px 20px 50px 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    width: 400px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     margin: auto;
 }
 
@@ -483,38 +489,19 @@ header.scrolled .sousMenu a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PARTIE PROJET */
 
 .projet {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% auto;
     flex-direction: column;
-    height: 750px;
-    width: 80%;  
+
+    margin: 9% auto;
+    padding: 6% 0;
+    width: 1650px; 
+
     border-radius: 50px;
-/*     background: linear-gradient(to top, rgb(7, 38, 65) 73%, transparent); /* couleur bleu du tite de base rgb(11, 62, 106) */
     background:  rgb(11, 62, 106);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
@@ -534,18 +521,9 @@ header.scrolled .sousMenu a {
     text-decoration: none
 }
 
-.pFinJ {
-    margin-left: 15%;
+.projet h2 {
+    margin: 1% 0 5% 0;
 }
-
-.pFinI {
-    margin-left: 24%;
-}
-
-.pS {
-    margin-left: 4%;
-}
-
 
 
 /* PARTIE ANIME */
@@ -554,88 +532,52 @@ header.scrolled .sousMenu a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30%;
+    width: 60%;
+    gap: 5%;
 }
 
 
+ /* BLOC DE CHAQEU PROJET */
 
-/* PARTIE JEUX */
-
-.sliderJ {
-    display: flex;
-    justify-content: center;
-    gap: 15%;
-    align-items: center;
-}
-
-.jeux1Titre {
-    width: 20%;
-    padding: 0 3%;
-    border-right: solid 2px white;
-
-}
-
-.jeux1Titre p {
-    padding: 0 0;
-    margin-top: 0;
-    margin-bottom: 0;
-
-    color:rgb(255, 255, 255);
-    font-size: 5em;
-    font-weight: 300;
-    font-family: Miagara;
-    text-decoration: none;
-}
-
-.bulleJeux {
+ 
+.bloc-1-projet {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
+    width: 23%;
+    height: 400px;
     gap: 20px;
+    padding: 5%;
+
+    animation: zoom 16s ease-in-out infinite;
+
+    background-color: #6c93be;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
- /* JEUX SLIDER ICONES */
-
- .boite_slider {
-    width: 320px;
-    overflow: hidden;
-    padding-bottom: 20px;
- }
-
-.sliderI {
-    display: flex;
-    align-items: center;
-    width: 240px;
-    margin-left: 40px;
-    gap: 80px;
-    animation: sliderJeux 15s infinite ease-in-out;
+.bloc-1-projet:nth-child(1) {
+    animation-delay: 0s;
 }
 
-.sliderI img {
-    flex-shrink: 0;
+.bloc-1-projet:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.bloc-1-projet:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.bloc-1-projet:nth-child(4) {
+    animation-delay: 12s;
+}
+
+/* TITRES/LIENS DES PROJETS */
+
+.bloc-1-projet a {
     width: 100%;
-    height: 100%;
-}
-
-
-  /* JEUX SLIDER TEXTE */
-
-.texte_slider {
-    overflow: hidden;
-    width: 320px;
-    position: relative;
-}
-
-.sliderT {
-    display: flex;
-    animation: sliderJeux 15s infinite ease-in-out;
-}
-
-.sliderT a {
-    flex-shrink: 0;
-    width: 100%;
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     font-family: Miagara;
     text-decoration: none;
@@ -643,106 +585,21 @@ header.scrolled .sousMenu a {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
 }
 
-.sliderT:hover a {
-    color: #647b94;
+.bloc-1-projet a:hover {
+    font-weight: 600;
 }
 
-/* ANIMATION DU SLIDE */
 
- @keyframes sliderJeux {
-    0%, 
-    47%{
-        transform: translateX(0);
-    }
-    52%,
-    92% {
-        transform: translateX(-320px);
-    }
-    100%{
-        transform: translate(-320px);
-    }
+/* ANIMATION DES IMAGES */
+
+ @keyframes zoom {
+    0%, 25%, 100% {
+        transform: scale(1);
+      }
+      12.5% {
+        transform: scale(1.05);
+      }
+
  }
 
- /* PARTIE SITE */
 
-.sliderS {
-    display: flex;
-    justify-content: center;
-    gap: 15%;
-    align-items: center;
-}
-
-.site1Titre {
-    width: 20%;
-    padding: 0 3%;
-    border-left: solid 2px white;
-}
-
-.site1Titre p {
-    padding: 0 0;
-    margin-top: 0;
-    margin-bottom: 0;
-
-    color:rgb(255, 255, 255);
-    font-size: 4.5em;
-    font-weight: 300;
-    font-family: Miagara;
-    text-decoration: none;
-}
-
-.bulleSite {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    margin-top: 20%;
-}
-
-
-/* SITE SLIDER TEXTE */
-
-.texte_slider {
-    overflow: hidden;
-    width: 320px;
-    position: relative;
-}
-
-.sliderS .sliderT {
-    display: flex;
-    height: 120px;
-    animation: sliderJeux 15s infinite ease-in-out;
-}
-
-.sliderS .sliderT a {
-    flex-shrink: 0;
-    width: 100%;
-    padding: 5% 0;
-    font-size: 2.4em;
-    color: white;
-    font-family: Miagara;
-    text-decoration: none;
-    text-align: center;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-}
-
-.sliderT:hover a {
-    color: #647b94;
-}
-
- /* SITE SLIDER ICONES */
-
- .sliderS .boite_slider {
-    width: 320px;
-    overflow: hidden;
- }
-
-.sliderS .sliderI {
-    display: flex;
-    animation: sliderJeux 15s infinite ease-in-out;
-}
-
-.sliderS .sliderI img {
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-}
