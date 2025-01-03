@@ -37,7 +37,7 @@
             
             <!--<div class="cercleImage1">.</div>
             <div class="cercleImage2">.</div>-->
-            <div class="en-tete">
+            <section id="en-tete">
                 <div class="blocNomTitre">
                     <div class="texte_accueil">
                     <h1>
@@ -50,24 +50,20 @@
                 <div class="img_accueil1">
                     <img class="gifAccueil" src="img_accueil_2/fondation-scp.png" alt="icone innovation">
                 </div>
+
                 <div class="img_accueil2">
                     <img class="gifAccueil2" src="img_accueil_2/mytho.png" alt="icone innovation">
                 </div>
+
                 <div class="img_accueil3">
                     <img class="gifAccueil3" src="img_accueil_2/restau-maman.png" alt="icone innovation">
                 </div>
         
-                <div class="blocEnVoirPlusTitre"><a href="#presentation-de-soi">En voir plus</a></div>
-            </div>
-
-            <section id="parcours">
-                <div class="blocDescriptionParcours">
-                    <p class="texteDescription">
-
-                    </p>
+                <div class="blocEnVoirPlusTitre">
+                    <a href="#presentation-de-soi">En voir plus</a>
                 </div>
-
             </section>
+
                 
 
             <section id="presentation-de-soi">
@@ -111,6 +107,16 @@
                     </div>
                 </div>
             </section>
+
+
+            <section id="parcours">
+                <div class="blocDescriptionParcours">
+                    <p class="texteDescription">
+
+                    </p>
+                </div>
+
+            </section>
             
         </main>
 
@@ -129,17 +135,4 @@
             </div>
         </footer>
     </body>
-
-    <!-- script pour que la nav change de couleur quand je scroll -->
-    <script>
-        document.addEventListener('scroll', ()=> {
-            const header = document.querySelector('header');
-
-            if (window.scrollY > 800) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            });
-    </script>
 </HTML>

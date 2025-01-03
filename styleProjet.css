@@ -64,15 +64,21 @@ main {
     justify-content: center;
     align-items: center;
 
-    background-color: #c87f7f;
+    background-color: #7d8c8e;
 
     gap: 100px;
-    padding: 4%;
+    padding: 10% 4%;
 
     text-align: justify;
     color: #ffffff;
     font-family: Poppins;
     font-size: 1.2em;
+    clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%);
+}
+
+#contribution-bloc {
+    clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 calc(100% - 150px));
+    margin: 10% 0;
 }
 
 #presentation-du-projet {
@@ -81,9 +87,11 @@ main {
     background-size: cover;
     background-position: center;
     color: #000000;
-    padding: 15% 5% ;
+    padding: 2% 5% 15% 5% ;
+    margin-top: 0;
     flex-direction: column;
     gap: 0;
+    clip-path:none;
 }
 
 /* BOUTON DE RETOUR EN HAUT A GAUCHE */
@@ -132,7 +140,7 @@ main {
     width: 100%;
     text-align: center;
 
-    color: #371515;
+    color: #273c50;
     font-size: 3em;
     font-weight: 700;
     font-family: Equila;
@@ -181,11 +189,11 @@ main {
 }
 
 #contribution-bloc span, #presentation-next-studie span {
-    color: #371515;
+    color: #31485f;
 }
 
 #presentation-du-projet span {
-    color : #c87f7f;
+    color : #e7314b;
     font-weight: 400;
 }
 

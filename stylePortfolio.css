@@ -32,14 +32,14 @@ html {
 body {
     margin: auto;
     padding: 0;
-    height: 100vh;
+
+    background-color:#FDF0E7;
+    background-attachment: fixed;
+    max-width: 1920px;
     /*background:url('images_accueil/fondBlancCercle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;*/
-    background-color:#FDF0E7;
-    background-attachment: fixed;
-    max-width: 1920px;
 }
 
 main {
@@ -133,11 +133,6 @@ nav .logo {
     padding: 0;
 }
 
-/*nav .logo img {
-    width: 135px;
-    border-radius: 5px;
-}*/
-
 .logo:hover{
     transition: 0.1s ease-in-out; /*a voir pour faire transition stylé parce que ca ca marche pas*/
     /*color: #ffffffee;
@@ -179,7 +174,6 @@ nav .logo {
     padding: 15px 10px;
 }
 
-
 nav > .projets:hover .sousMenu {
     height: 109px;  /* cette ligne c'est pour que le menu déroulant glisse */
 }
@@ -199,19 +193,19 @@ nav >.projets>.sousMenu>div:hover a {
 /* PAGE D'ACCUEIL :: PARTIE 1 */
 
 
-.en-tete {
-    height: 90vh;
-    margin: 8% auto;
+#en-tete {
+    height: 1000px;
+    margin: 8%;
     max-width: 1920px;
-   
-    width: 90%;
+    width: 85%;
 
     display: grid;
-    grid-template-columns: 1fr 1fr ; /* 2 colonnes de tailles égales */
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50% ; /* 2 colonnes de tailles égales */
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;       /* 3 rangées de tailles égales */
     gap: 5%;        
 }
-
 
 
 
@@ -229,6 +223,7 @@ nav >.projets>.sousMenu>div:hover a {
     height: 280px;
     width: 280px;
     background-color: rgba(250, 250, 250, 1);*/
+    height: 500px;
     border: 0.1px solid #000000;
      /*border-radius: 50%;*/
     box-shadow: -5px 0 15px rgb(0, 0, 0, 0.3);
@@ -243,13 +238,14 @@ nav >.projets>.sousMenu>div:hover a {
     grid-column: 2 ; 
     grid-row: 7;        /* Occupe la première ligne */
 
+    width: 100%;
     height: 100px;
     border: 0.1px solid #EED7C5;
     z-index: 0;
 
     background-color: #fff7f0;
 
-    margin-top: -10%;
+    margin-top: 50px;
     box-shadow: -5px 0 15px rgb(0, 0, 0, 0.1);
 }
 
@@ -276,8 +272,9 @@ nav >.projets>.sousMenu>div:hover a {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    font-size: 20px;
 
-    max-width: 1920px;
+    max-width: 800px;
     width: 100%;
 
     padding-top: 5%;
@@ -299,29 +296,10 @@ nav >.projets>.sousMenu>div:hover a {
     text-align: start;
     margin-left: 10%;
 
-/*     text-shadow: 7px 7px 11px black;
- */    /* pour l'animation d'entrée de site : */
     transform: translateY(400px);
     display: block;
     overflow: hidden;
     animation: 3s titreAnime cubic-bezier(0, 0.55, 0.45, 1) 0.5s forwards;
-}
-
-.en-tete .voir-plus-titre {
-    overflow: hidden;
-    margin-top: 5%;
-    margin-left: -335%;
-}
-
-.en-tete .voir-plus-titre .voir-plus {
-    /* texte */
-    color: #000000;/*rgb(11, 62, 106);*/
-    Font-family: Miagara;
-    font-weight: 200;
-    font-size: 1.5em;
-    width: 100%;
-    text-align: start;
-    margin: 355% 0 0 0;
 }
 
 .texte_accueil .p2 {
@@ -348,13 +326,14 @@ nav >.projets>.sousMenu>div:hover a {
 
 /* PARTIE IMAGES DE L'ACCUEIL */
 
-.en-tete .img_accueil1, .en-tete .img_accueil2, .en-tete .img_accueil3 {
+#en-tete .img_accueil1, #en-tete .img_accueil2, #en-tete .img_accueil3 {
    width: 100%;
    background-color: transparent /* marron rgb(33, 22, 5) */;/*  rgba(14, 48, 104, 0.835) */
 }
 
 .img_accueil1 {
     /* scp */
+    width: 100%;
     align-items: center;
     grid-column: 2 ; /* Occupe les colonnes 1 et 2 */
     grid-row: 1/3;        /* Occupe les deux premieres lignes */
@@ -362,20 +341,22 @@ nav >.projets>.sousMenu>div:hover a {
 
 .img_accueil2 {
     /* mytho */
-    padding-top: 12%;
+    width: 100%;
+    padding-top: 22%;
     grid-column: 2 ; /* Occupe les colonnes 1 et 2 */
     grid-row: 3/6;        /* Occupe les deux premieres lignes */
 }
 
 .img_accueil3 {
     /* restau */
+    width: 100%;
     grid-column: 1 ; /* Occupe les colonnes 1 et 2 */
     grid-row: 5/8;        /* Occupe les deux premieres lignes */
 }
 
 
 .gifAccueil {
-    width: 700px;
+    width: 100%;
     /*position: absolute;
     right: 90px;
     top: 160px;*/
@@ -386,7 +367,8 @@ nav >.projets>.sousMenu>div:hover a {
     /*position: absolute;
     right: 6%;
     top: 600px;*/
-    width: 700px;
+    /*width: 700px;*/
+    width: 100%;
     border: solid 10px #a8978b;
     
 }
@@ -395,7 +377,8 @@ nav >.projets>.sousMenu>div:hover a {
     /*position: absolute;
     right: 900px;
     top: 780px;*/
-    width: 700px;
+    /*width: 700px;*/
+    width: 100%;
     border: solid 15px #EED7C5;
 }
 
@@ -413,7 +396,7 @@ nav >.projets>.sousMenu>div:hover a {
     width: 100%;
     height: 700px;
     max-width: 1920px;
-    padding: 10% 0;
+    padding: 300px 0;
     clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%);
 }
 
@@ -475,6 +458,7 @@ nav >.projets>.sousMenu>div:hover a {
 #footer {
     background-color: #000000;
     height: 400px;
+    margin: 0;
 }
 
 #footer .bloc-contact {
@@ -483,6 +467,7 @@ nav >.projets>.sousMenu>div:hover a {
     justify-content: space-around;
     align-items: center;
     margin: auto;
+    background-color: #000000;
 }
 
 #footer .bloc-contact .bloc-numTel-Email {
@@ -508,11 +493,11 @@ nav >.projets>.sousMenu>div:hover a {
     align-items: center;
     flex-direction: column;
 
-    margin: -12% auto 0 auto;
+    margin-top: -12% ;
     padding: 20% 0;
     max-width: 1920px;
+    width: 100%;
 
-    border: solid 1px #000000;
     background-color: #FDF0E7;
     /*background: linear-gradient(to bottom, #FDF0E7, #FDF0E7, #000000);
     clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%);*/
@@ -523,7 +508,6 @@ nav >.projets>.sousMenu>div:hover a {
 .projet h2, #titre-qui-suis-je {
     width: 100%;
     margin-top: 3%;
-    padding-left: -10%;
     text-align: center;
 
     color: #000000;
@@ -535,8 +519,7 @@ nav >.projets>.sousMenu>div:hover a {
 
 .projet h2 {
     margin: 5% 0 10% 0;
-    text-align: start;
-    padding-left: 600px;
+    text-align: center;
 }
 
 
@@ -548,6 +531,7 @@ nav >.projets>.sousMenu>div:hover a {
     justify-content: center;
     width: 60%;
     gap: 5%;*/
+    max-width: 1920px;
     width: 85%;
     display: grid; /* Active le mode grille */
     grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes de tailles égales */
@@ -557,11 +541,10 @@ nav >.projets>.sousMenu>div:hover a {
 }
 
 
- /* BLOC DE CHAQEU PROJET */
+ /* BLOC DE CHAQUE PROJET */
 
  
 .bloc-1-projet {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -619,7 +602,7 @@ nav >.projets>.sousMenu>div:hover a {
 
 .bloc-1-projet a {
     width: 100%;
-    font-size: 2.7em;
+    font-size: 1.9em;
     font-weight: 700;
     font-family: Poppins;
     color: #ffffff;
@@ -628,18 +611,24 @@ nav >.projets>.sousMenu>div:hover a {
     padding: 2% 0;
 }
 
-.bloc-1-projet:nth-child(3) > a {
+ .bloc-1-projet:nth-child(3) > a {
     color: #796659;
 }
 
 .bloc-1-projet:nth-child(1) > a, .bloc-1-projet:nth-child(4) > a {
     color: #ffffff;
+    font-size: 2em;
     background-color: transparent;
+}
 
+.bloc-1-projet:nth-child(2) > a {
+    color: #ffffff;
+    font-size: 1.9em;
+    background-color: transparent;
 }
 
 .bloc-1-projet a:hover {
-    font-size: 2.75em;
+    font-size: 2.0em;
     transition: all 0.3s ;
 }
 
