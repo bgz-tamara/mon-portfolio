@@ -27,3 +27,17 @@ function prevSlide() {
 
 // Auto-slide every 5 seconds
 setInterval(nextSlide, 5000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const steps = document.querySelectorAll('.step');
+    const cursor = document.querySelector('.cursor');
+
+    cursor.addEventListener('animationiteration', () => {
+        steps.forEach((step, index) => {
+            const position = parseInt(cursor.style.top || '0', 20);
+            if (position === index * 10) {
+                console.log(`Reached: ${step.querySelector('p').textContent}`);
+            }
+        });
+    });
+});
