@@ -1,3 +1,11 @@
+/* Couleurs principales du sites : 
+    beige de fond : #FDF0E7;
+    noir de fond : #1a1a1a;
+    couleurs texte : #ffffff;
+    couleur span du texte : #a8978b;
+    couleur span du texte sur fond beige  : #5b524b;
+    */
+
 /* POLICES */
 
 @font-face {
@@ -34,11 +42,11 @@ body {
     margin: auto;
     padding: 0;
     height: 100vh;
-    background:url('images_accueil/fondBlancCercle.jpg');
+    /*background:url('images_accueil/fondBlancCercle.jpg');
     background-repeat: repeat;
     background-size: cover;
-    background-position: center;
-    background-color:rgb(255, 255, 255);
+    background-position: center;*/
+    background-color:#FDF0E7;
     /* pour effet de soulignage du menu au survol : 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;*/
@@ -51,63 +59,72 @@ main {
     margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1920px;
 }
 
 
 
 /* TITRE + TEXTE DE PRSENTATIION DU PROJET */
 
-#presentation-du-projet, #contribution-bloc, #presentation-next-studie {
+#presentation-du-projet, #contribution-bloc, #presentation-next-studie, #presentation-competences {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    background-color: #7d8c8e;
+    background-color: #FDF0E7;
+    color: #000000;
 
     gap: 100px;
-    padding: 10% 4%;
+    padding: 7% 4%;
 
     text-align: justify;
-    color: #ffffff;
     font-family: Poppins;
     font-size: 1.2em;
-    clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%);
+    max-width: 1920px;
+    /*clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%);*/
 }
 
-#contribution-bloc {
-    clip-path: polygon(0 0, 100% 150px, 100% 100%, 0 calc(100% - 150px));
-    margin: 10% 0;
-}
 
 #presentation-du-projet {
-    background:url('images_accueil/fondBlancCercle.jpg');
+    /*background:url('imgNextStudies/next-studies-photo1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    color: #000000;
-    padding: 2% 5% 15% 5% ;
+    background-position: center;*/
+    padding: 2% 5%;
     margin-top: 0;
     flex-direction: column;
     gap: 0;
+    width: 90%;
     clip-path:none;
+    background-color: #1a1a1a;
+    color: #FDF0E7;
+}
+
+#contribution-bloc {
+    background-color: #1a1a1a;
+    color: #FDF0E7;
+    padding: 5%;
+    margin-top: 0;
+
 }
 
 /* BOUTON DE RETOUR EN HAUT A GAUCHE */
 
 .bouton-retour-area {
     width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 4%;
+    margin: 0;
     background-color: none;
     align-items: center;
 }
 
 .bouton-retour-area p {
-    color:#000000;
+    color:#a8978b;
     font-size: 1.2em;
     font-weight: 700;
     font-family: Equila;
@@ -115,15 +132,15 @@ main {
 }
 
 .bouton-retour-area a {
-    background-color: #ffffff;
-    border: 0.2px solid rgb(11, 62, 106);
+    background-color: #fff;
+    border: 0.2px solid #a8978b;
     border-radius: 20px;
 
     padding: 10px;
     margin: 30px;
     width: 250px;
     text-align: center;
-    color: rgb(11, 62, 106);
+    color: #5b524b;
     font-weight: 500;
     font-family: Poppins;
     font-size: 0.8em;
@@ -140,7 +157,7 @@ main {
     width: 100%;
     text-align: center;
 
-    color: #273c50;
+    color: #550511;
     font-size: 3em;
     font-weight: 700;
     font-family: Equila;
@@ -149,11 +166,18 @@ main {
     text-indent:0;
 }
 
-#presentation-du-projet #titre-projet {
+#presentation-du-projet #titre-projet, #contribution-bloc #titre-projet, #titre-competences {
     font-size: 3.3em;
-    padding-top: 10%;
-    color: #000000;
+    color: #550511;
     padding-bottom: 0%;
+}
+
+#presentation-du-projet #titre-projet {
+    font-size: 2.3em;
+    color: #fff;
+    font-family: Poppins;
+    padding: 0;
+    margin: 0 auto;
 }
 
 
@@ -179,22 +203,116 @@ main {
 
 
 /* PARAGRAPHE */
+
 #presentation-du-projet .presentation-du-projet-bloc {
-    width: 90%;
-    margin-bottom: 4%;
+    width: 80%;
+    padding: 0 4%;
+    text-align: center;
+    /*background-color: #1a1a1a;*/
+    color: #fff;
+    font-size: 1.0em;
 }
+
 #contribution-bloc .presentation-du-projet-bloc, #presentation-next-studie .presentation-du-projet-bloc {
     width: 35%;
     text-indent:40px;
 }
 
-#contribution-bloc span, #presentation-next-studie span {
-    color: #31485f;
+ #presentation-next-studie span {
+    color: #a8978b;
 }
 
-#presentation-du-projet span {
-    color : #e7314b;
-    font-weight: 400;
+#presentation-du-projet span, #contribution-bloc span, #presentation-competences span {
+    color : #a8978b;
 }
 
+/* Bouton arrondi avec fleche de la premiere section */
+.rounded-button {
+    width: 170px;
+    height: 40px;
+    margin: 2%;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Supprime la décoration du lien */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.rounded-button:hover {
+    background-color: #d4cac3;
+    transform: translateY(-2px);
+}
+
+.rounded-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------SLIDER ----------------------*/
+.slider_fond {
+    background-color: #a8978b;
+    width: 90%;
+    height: 2px;
+}
+
+.slider-container {
+    position: relative;
+    top: -200%;
+    width: 60%;
+    max-width: 1920px;
+    overflow: hidden;
+    margin: 2% auto;
+    border: solid 10px #550511;/*#dac5b5;*/
+    border-radius: 10px;
+    background-color: #a8978b;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-container button.prev {
+    left: 10px;
+}
+
+.slider-container button.next {
+    right: 10px;
+}
+
+/* ---------- FIN SLIDER ---------------*/
