@@ -158,7 +158,7 @@ main {
     text-align: center;
 
     color: #550511;
-    font-size: 3em;
+    font-size: 3.3em;
     font-weight: 700;
     font-family: Equila;
     text-decoration: none;
@@ -168,8 +168,12 @@ main {
 
 #presentation-du-projet #titre-projet, #contribution-bloc #titre-projet, #titre-competences {
     font-size: 3.3em;
-    color: #550511;
+    color: #FDF0E7;
     padding-bottom: 0%;
+}
+
+#titre-competences {
+    color: #008B8B;
 }
 
 #presentation-du-projet #titre-projet {
@@ -218,12 +222,12 @@ main {
     text-indent:40px;
 }
 
- #presentation-next-studie span {
+ #presentation-next-studie span, #contribution-bloc span, #presentation-competences span {
     color: #a8978b;
 }
 
-#presentation-du-projet span, #contribution-bloc span, #presentation-competences span {
-    color : #a8978b;
+#presentation-du-projet span {
+    color : #48D1CC;
 }
 
 /* Bouton arrondi avec fleche de la premiere section */
@@ -234,7 +238,7 @@ main {
     border: none;
     border-radius: 20px;
     background-color: #fff;
-    color: white;
+    color: #a8978b;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -243,6 +247,10 @@ main {
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rounded-button .arrow {
+    color: #a8978b;
 }
 
 .rounded-button:hover {
@@ -266,28 +274,31 @@ main {
     position: relative;
     top: -200%;
     width: 60%;
+    height: 500px; /* Hauteur visible du slider */
     max-width: 1920px;
     overflow: hidden;
     margin: 2% auto;
-    border: solid 10px #550511;/*#dac5b5;*/
+    border: solid 10px #5a5858;/*#dac5b5;*/
     border-radius: 10px;
     background-color: #a8978b;
 }
 
 .slider {
     display: flex;
+    flex-direction: column; /* Permet un défilement vertical */
     transition: transform 0.5s ease-in-out;
 }
 
 .slider img {
-    width: 100%;
+    width: 100%; /* Largeur de chaque image égale au conteneur */
+    height: 500px; /* Hauteur de chaque image égale au conteneur */
     flex-shrink: 0;
 }
 
 .slider-container button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -308,11 +319,11 @@ main {
 }
 
 .slider-container button.prev {
-    left: 10px;
+    top: 10px;
 }
 
 .slider-container button.next {
-    right: 10px;
+    bottom: 10px;
 }
 
 /* ---------- FIN SLIDER ---------------*/

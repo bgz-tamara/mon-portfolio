@@ -1,0 +1,322 @@
+/* Couleurs principales du sites : 
+    beige de fond : #FDF0E7;
+    noir de fond : #1a1a1a;
+    couleurs texte : #ffffff;
+    couleur span du texte : #a8978b;
+    couleur span du texte sur fond beige  : #5b524b;
+    */
+
+/* POLICES */
+
+@font-face {
+    font-family: Manrope;
+    src: url(font-Manrope/Manrope-VariableFont_wght.ttf);
+
+}
+
+@font-face { /* Titre page d'accueil */
+    font-family: Miagara;
+    src: url(font-miagara/Miagara.ttf);
+}
+
+
+@font-face { /* Titre icones jeux */
+    font-family: Poppins;
+    src: url(font-poppins/poppins.regular.ttf);
+}
+
+@font-face { /* Titre icones jeux */
+    font-family: Equila;
+    src: url(font-equila/Equila.otf);
+}
+
+ /* HTML */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 135px;
+}
+
+/* BODY */
+body {
+    margin: auto;
+    padding: 0;
+    height: 100vh;
+    /*background:url('images_accueil/fondBlancCercle.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;*/
+    background-color:#FDF0E7;
+    /* pour effet de soulignage du menu au survol : 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+    overflow-x: hidden;
+    max-width: 1920px;
+
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1920px;
+}
+
+
+
+/* TITRE + TEXTE DE PRSENTATIION DU PROJET */
+
+#presentation-du-projet, #contribution-bloc, #presentation-next-studie, #presentation-competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FDF0E7;
+    color: #000000;
+
+    gap: 100px;
+    padding: 7% 4%;
+
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 1.2em;
+    max-width: 1920px;
+    /*clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%);*/
+}
+
+
+#presentation-du-projet {
+    /*background:url('imgNextStudies/next-studies-photo1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    padding: 2% 5%;
+    margin-top: 0;
+    flex-direction: column;
+    gap: 0;
+    width: 90%;
+    clip-path:none;
+    background-color: #1a1a1a;
+    color: #FDF0E7;
+}
+
+#contribution-bloc {
+    background-color: #1a1a1a;
+    color: #FDF0E7;
+    padding: 5%;
+    margin-top: 0;
+
+}
+
+/* BOUTON DE RETOUR EN HAUT A GAUCHE */
+
+.bouton-retour-area {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4%;
+    margin: 0;
+    background-color: none;
+    align-items: center;
+}
+
+.bouton-retour-area p {
+    color:#a8978b;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: Equila;
+    text-indent:0;
+}
+
+.bouton-retour-area a {
+    background-color: #fff;
+    border: 0.2px solid #a8978b;
+    border-radius: 20px;
+
+    padding: 10px;
+    margin: 30px;
+    width: 250px;
+    text-align: center;
+    color: #5b524b;
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+.bouton-retour-area a:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+
+/* TITRE */
+#presentation-du-projet #titre-projet, #contribution-bloc #titre-projet, #presentation-next-studie #titre-projet {
+    width: 100%;
+    text-align: center;
+
+    color: #550511;
+    font-size: 3.3em;
+    font-weight: 700;
+    font-family: Equila;
+    text-decoration: none;
+    margin-bottom: 5%;
+    text-indent:0;
+}
+
+#presentation-du-projet #titre-projet, #contribution-bloc #titre-projet, #titre-competences {
+    font-size: 3.3em;
+    color: #FDF0E7;
+    padding-bottom: 0%;
+}
+
+#titre-competences {
+    color: #550511;
+}
+
+#presentation-du-projet #titre-projet {
+    font-size: 2.3em;
+    color: #fff;
+    font-family: Poppins;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+/* IMAGE */
+
+#contribution-bloc .imgBox, #presentation-next-studie .imgBox  {
+    width: 50%;
+    height: 50%;
+    margin: 4% 0;
+}
+
+#contribution-bloc .img-contributiuon-bloc, #presentation-next-studie .imgProjetBloc {
+    width: 100%;
+    height: 100%;
+}
+#contribution-bloc .img-contributiuon-bloc img, #presentation-next-studie .imgProjetBloc img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 50px 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* PARAGRAPHE */
+
+#presentation-du-projet .presentation-du-projet-bloc {
+    width: 80%;
+    padding: 0 4%;
+    text-align: center;
+    /*background-color: #1a1a1a;*/
+    color: #fff;
+    font-size: 1.0em;
+}
+
+#contribution-bloc .presentation-du-projet-bloc, #presentation-next-studie .presentation-du-projet-bloc {
+    width: 35%;
+    text-indent:40px;
+}
+
+ #presentation-next-studie span {
+    color: #a8978b;
+}
+
+#presentation-du-projet span, #contribution-bloc span, #presentation-competences span {
+    color : #a8978b;
+}
+
+/* Bouton arrondi avec fleche de la premiere section */
+.rounded-button {
+    width: 170px;
+    height: 40px;
+    margin: 2%;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Supprime la décoration du lien */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rounded-button:hover {
+    background-color: #d4cac3;
+    transform: translateY(-2px);
+}
+
+.rounded-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------SLIDER ----------------------*/
+.slider_fond {
+    background-color: #a8978b;
+    width: 90%;
+    height: 2px;
+}
+
+.slider-container {
+    position: relative;
+    top: -200%;
+    width: 60%;
+    max-width: 1920px;
+    overflow: hidden;
+    margin: 2% auto;
+    border: solid 10px #5a5858;/*#dac5b5;*/
+    border-radius: 10px;
+    background-color: #a8978b;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-container button.prev {
+    left: 10px;
+}
+
+.slider-container button.next {
+    right: 10px;
+}
+
+/* ---------- FIN SLIDER ---------------*/
