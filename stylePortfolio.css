@@ -625,8 +625,7 @@ nav >.projets>.sousMenu>div:hover a {
     grid-column: 1; /* Occupe la colonne 1 */
     grid-row: 2;    /* Occupe la deuxième ligne */
     /*animation-delay: 8s;*/
-    background-image: url('images_accueil/fondBlancCercle.jpg');
-    background-size: cover;
+    background-image: url('imgNextStudies/university.jpg');
     background-position: center;
 }
 
@@ -643,27 +642,27 @@ nav >.projets>.sousMenu>div:hover a {
 
 .bloc-1-projet a {
     width: 100%;
-    font-size: 1.9em;
+    font-size: 1.5em;
     font-weight: 700;
-    font-family: Poppins;
-    color: #ffffff;
+    color: #FDF0E7;
+    font-family: Manrope;
     text-decoration: none;
     text-align: center;
+    text-shadow: #1a1a1a 1px 0 10px;
     padding: 2% 0;
 }
 
  .bloc-1-projet:nth-child(3) > a {
-    color: #796659;
+    font-size: 1.9em;
+    background-color: transparent;
 }
 
 .bloc-1-projet:nth-child(1) > a, .bloc-1-projet:nth-child(4) > a {
-    color: #ffffff;
     font-size: 2em;
     background-color: transparent;
 }
 
 .bloc-1-projet:nth-child(2) > a {
-    color: #ffffff;
     font-size: 1.9em;
     background-color: transparent;
 }
