@@ -9,8 +9,7 @@
 
 @font-face {
     font-family: Manrope;
-    src: url(font-Manrope/Manrope-VariableFont_wght.ttf);
-
+    src: url(../font/font-Manrope/Manrope-VariableFont_wght.ttf);
 }
 
 @font-face { /* Titre page d'accueil */
@@ -20,13 +19,9 @@
 
 @font-face { /* Titre icones jeux */
     font-family: Poppins;
-    src: url(font-poppins/poppins.regular.ttf);
+    src: url(../font/font-poppins/poppins.regular.ttf);
 }
 
-@font-face { /* Titre icones jeux */
-    font-family: Bebas;
-    src: url(font-bebas_neue/BebasNeue-Regular.otf);
-}
 
  /* HTML */
 

@@ -8,26 +8,14 @@
 
 /* POLICES */
 
-@font-face {
-    font-family: Manrope;
-    src: url(font-Manrope/Manrope-VariableFont_wght.ttf);
-
-}
-
-@font-face { /* Titre page d'accueil */
-    font-family: Miagara;
-    src: url(font-miagara/Miagara.ttf);
-}
-
-
 @font-face { /* Titre icones jeux */
     font-family: Poppins;
-    src: url(font-poppins/poppins.regular.ttf);
+    src: url(../font/font-poppins/poppins.regular.ttf);
 }
 
 @font-face { /* Titre icones jeux */
     font-family: Equila;
-    src: url(font-equila/Equila.otf);
+    src: url(../font/font-equila/Equila.otf);
 }
 
  /* HTML */
