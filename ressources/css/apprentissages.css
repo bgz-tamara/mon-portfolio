@@ -1,0 +1,200 @@
+/* POLICES */
+
+@font-face {
+    font-family: Manrope;
+    src: url(../font/font-Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face { /* Titre page d'accueil */
+    font-family: Miagara;
+    src: url(../font/font-miagara/Miagara.ttf);
+}
+
+@font-face { /* Titre icones jeux */
+    font-family: Poppins;
+    src: url(../font/font-poppins/poppins.regular.ttf);
+}
+
+body {
+    margin: auto;
+    padding: 0;
+
+    background-color:#092327;
+    background-attachment: fixed;
+    max-width: 1920px;
+    /*background:url('images_accueil/fondBlancCercle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+
+
+.onglet-apprentissage {
+    background-color: #237665 ;
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageEnTete {
+    background:url('../img/img_apprentissage/banniere-illu-4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 10%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+  background-color: #F8F9FA ;
+}
+
+.tab {
+  background-color: #F8F9FA ;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #000000;
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.tab.active {
+  border-bottom: 1px solid #000000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 50px auto;
+
+  width: 80%;
+  min-width: 1000px;
+  min-height: 600px;
+  background-color: #F8F9FA ;
+
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  display: none;
+  margin: 50px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* TEXTES */
+
+.titre-apprentissages {
+    color: #1E332F;
+    font-family: Miagara;
+    font-size: 2.5em;
+    margin: 5% 0 0;
+    padding-left: 120px;
+    width: 60%;
+    text-wrap: wrap;
+}
+
+.titre {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 1.0s ease-out, opacity 1.0s ease-out;
+}
+
+.pTexteApprentissage {
+    width: 55%;
+    margin: 20px 0 100px;
+    padding-left: 120px;
+    color: #F8F9FA;
+    font-family: Poppins;
+    text-align: start;
+    font-size: 1em;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+h2 {
+  color: #21332F;
+  font-family: Poppins;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 40px 0;
+  transition: transform 1.0s ease-out, opacity 1.0s ease-out;
+}
+
+.titre_comp {
+  text-align: start;
+}
+
+.titre_competence {
+  color: #21332F;
+  font-family: Poppins;
+  text-align: center;
+  font-size: 1.0em;
+}
+
+.p1, .p_maitrise {
+  color: #21332F;
+  font-family: Poppins;
+  text-align: justify;
+  text-indent: 5%;
+  font-size: 1.1em;
+}
+
+.p1 a {
+  color: #237665;
+}
+
+.p_maitrise {
+  text-indent: 0;
+  text-align: center;
+}
+
+/* BLOC DE COMPETENCE */
+
+.competences {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+}
+
+.bloc_competence {
+  width: 21%;
+  text-align: center;
+  padding: 1%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2); 
+}

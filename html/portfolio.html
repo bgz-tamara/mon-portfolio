@@ -4,60 +4,48 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../ressources/css/stylePortfolio.css" rel="stylesheet">
+            <script src="../js/scriptPageAccueil.js"></script>
         <title>Portfolio - Benghezal Tamara</title>
     </head>
     <body>
         <!-- HEADER -->
         <header>
             <nav class="navbar"> <!--menu déroulant-->
-                <a href="#" class="logo">Tamara Benghezal</a>
+                <a href="portfolio.html#" id="logo">Tamara Benghezal</a>
 
-                <div class="accueil"><a class="surligne" href="#liens">QUI SUIS-JE ?</a></div>
-
-                <div class="projets"><a class="surligne" href="#projets">PROJETS</a>
-                    <!--<div class="sousMenu">-->
-                        <!--<div><a href="#jeux1">Jeux</a></div>--><!--lien vers 'autres pages'-->
-                        <!--<div><a href="">Sites et Applis</a></div>--><!--lien vers 'autres pages'-->
-                    <!--</div> -->
+                <div class="lien-accueil"><a class="surligne" href="#liens">QUI SUIS-JE ?</a></div>
+                <div class="projets"><a class="surligne" href="#transition">PROJETS</a>
                 </div>
                 <div class="parcours"><a class="surligne" href="#pacours">PARCOURS</a>
-                        <!-- METTRE LIEN VERS ENDROIT DANS LA MEME PAGE AVEC ECHELLE/ESCALIER DU PARCOURS-->
+                </div>
+                </div>
+                <div class="parcours"><a class="surligne" href="apprentissages.html">APPRENTISSAGE</a>
                 </div>
 
-                <div class="contact"><a href="#footer">CONTACT</a></div>
+                <div id="contact"><a href="#footer">CONTACT</a></div>
             </nav>
         </header>
 
         <!-- MAIN -->
         <main>
-            <!--<div class="cercleImage1">.</div>
-            <div class="cercleImage2">.</div>-->
             <section id="en-tete">
-                <div class="blocNomTitre">
-                    <div class="texte_accueil">
-                    <h1>
-                        <p><span>Tamara Benghezal</span></p>
-                    </h1>
-                        <p class="p2">- Développeuse Web -</p>
+                <div class="banniere-accueil-waving">
+                    <svg viewBox="0 0 400 200">
+                        <!-- Courbe de Bézier : trait légèrement arrondi -->
+                        <path d="M 50 60 Q 240 10 350 100" />
+                    </svg>
+                    <div id="texte_banniere">
+                        <h1 class="titre2 debut">Bonjour !</h1>
+                        <h1 class="titre2 milieu">Je suis</h1>
+                        <div class="texte_accueil">
+                            <h1 class="titre_nom">Tamara Benghezal</h1>
+                            <p class="p_profession">Développeuse Web</p>
+                        </div>
+                        <h1 class="titre2 fin" onclick="window.location.href='#presentation-de-soi'">En savoir plus...</h1>
                     </div>
                 </div>
-
-                <div class="img_accueil1">
-                    <img class="gifAccueil" src="../ressources/img/img_accueil_2/fondation-scp.png" alt="icone innovation">
-                </div>
-
-                <div class="img_accueil2">
-                    <img class="gifAccueil2" src="../ressources/img/img_accueil_2/mytho.png" alt="icone innovation">
-                </div>
-
-                <div class="img_accueil3">
-                    <img class="gifAccueil3" src="../ressources/img/img_accueil_2/restau-maman.png" alt="icone innovation">
-                </div>
-        
-                <div class="blocEnVoirPlusTitre">
-                    <a href="#liens">À propos de moi</a>
-                </div>
             </section>
+
 
             <section id="presentation-de-soi">
 
@@ -74,7 +62,7 @@
                         </div>
                         <div class="lien-box">
                             <div class="lien-CV">
-                                <a href="pdf/CV_2025-04-07_Tamara_Benghezal.pdf" download="CV_2025-04-07_Tamara_Benghezal.pdf" target="_blank"> 
+                                <a href="../ressources/pdf/CV_Tamara_Benghezal.pdf" download="CV_2025-04-07_Tamara_Benghezal.pdf" target="_blank"> 
                                     <img class="" src="../ressources/img/img_accueil_2/carre.png" alt="icone cv">
                                 </a>
                                 <p>Mon CV</p>
@@ -96,36 +84,46 @@
                         <h2 id="titre-qui-suis-je">Qui suis-je ?</h2> 
                         <div class="formulaire">
                             <p class="p-presentation-de-soi">
-                                Étudiante en <span>2ème année de BUT Informatique</span> à l'IUT de Montpellier-Sète, je suis passionnée par le développement web et l'apprentissage de nouvelles aptitudes dans ce domaine.<br><br> Mes compétences incluent donc le <span>développement web</span> (HTML, CSS, PHP), la <span>gestion de bases de données</span> (SQL) et d'autres compétences en <span>programmation</span>(Java, C) .
+                                Étudiante en <span>2ème année de BUT Informatique</span> à l'IUT de Montpellier-Sète, je suis passionnée par le développement web et l'apprentissage de nouvelles aptitudes dans ce domaine.<br><br> Ma formation actuelle m'a permis d'accumuler et d'améliorer petit-à-petit plusieurs compétences, allant du <span>développement web</span> (HTML, CSS, Javascript, PHP) jusqu'à la programmation logiciel (Java, C) en passant par la <span>gestion de bases de données</span> (SQL) et d'autres notions essentielles en <span>réseau, optimisation et organisation du travail</span>.
 
-                                <br><br>Actuellement, je suis à la recherche d’<span>une alternance d'un an</span> à partir de septembre 2025 pour approfondir mes connaissances pratiques et participer à des projets innovants.
+                                <br><br>Afin d'approfondir mes connaissances pratiques et de participer à des projets ayant un impact réel sur les utilisateurs, je recherche actuellement une <span>alternance d'un an</span> à partir de septembre 2025. Ca serait pour moi l'occasion de consolider ces nouveaux atouts et de développer de nouvelles aptitudes !
 
-                                <br><br><span>Dynamique</span>, <span>curieuse</span> et <span>rigoureuse</span>, je me donne à fond dans mes missions pour fournir un travail de qualité, apprendre et évoluer dans mon environnement professionnel.
+                                <br><br><span>Investie</span>, <span>curieuse</span> et <span>surtout rigoureuse</span>, je me donne à fond dans mes missions pour fournir un travail de qualité, apprendre et évoluer dans mon environnement professionnel.
                             
-                                <br><br>À terme, j'aimerais entrer en <span>école d'ingénieur</span> pour pouvoir appronfondir mes connaissances en développement logiciel et acquérir les compétences nécessaires pour <span>rendre la vie des gens plus simple</span> en créant des solutions numériques toujours plus performantes !</p>
+                                <br><br>Après le BUT, j'aimerais entrer en <span>école d'ingénieur</span> pour pouvoir acquérir les compétences nécessaires pour <span>rendre la vie des gens plus simple</span> en créant des solutions numériques toujours plus performantes !</p>
                         </div>
                     </div>
                 </div>
-
             </section>
-
-            <section class="projet">
-
-                <h2 id="projets">MES PROJETS</h2> <!-- - - PROJETS - - - - - - - - - - -->
+            <div id="transition">
+                <img id="imageTransitionTamara" src="../ressources/img/img_accueil_3/transition-accueil-4.png" alt="icone_tamara_2">
+                <!-- <svg class="svg-rotate" viewBox="0 0 400 200">
+                    <path d="M 50 60 L 350 0" stroke="black" stroke-width="3" fill="none" />
+                </svg> -->
+            </div>
+            
+            <section id="projet">
+                <h2 id="projets">Mes projets</h2> <!-- - - PROJETS - - - - - - - - - - -->
                 
                 <div class="slider">
-                    <div class="bloc-1-projet">
-                        <!--<img src="../ressources/img/iconeJeux/train-a-grande-vitesse.png" alt="icon train">-->
+                    <div class="bloc-1-projet" onclick="window.location.href='mythologie.html'">
+                        <div class="image_projet"></div>
+                        <a href="mythologie.html">Site documentaire sur la mythologie grecque</a>
+                    </div>
+
+                    <div class="bloc-1-projet" onclick="window.location.href='#'">
+                        <div class="image_projet"></div>
                         <a href="#">Adaptation du jeu de société "Train" en jeu de vidéo</a>
                     </div>
-                    <div class="bloc-1-projet">
+
+                    <div class="bloc-1-projet" onclick="window.location.href='escape-game.html'">
+                        <div class="image_projet"></div>
                         <a href="escape-game.html">Site vitrine d'un escape game</a>
                     </div>
-                    <div class="bloc-1-projet">
+
+                    <div class="bloc-1-projet" onclick="window.location.href='nextstudies.html'">
+                        <div class="image_projet" ></div>
                         <a href="nextstudies.html">Site web dynamique Next Studies</a>
-                    </div>
-                    <div class="bloc-1-projet">
-                        <a href="mythologie.html">Site documentaire sur la mythologie grecque</a>
                     </div>
                 </div>
             </section>
@@ -133,16 +131,16 @@
             <section id="presentation-de-soi" class="section_parcours">
                 <div id="pacours" class="presentation-de-soi-bloc">
                     <div class="formBox">
-                        <h2 id="titre-qui-suis-je">Mon pacours</h2> 
+                        <h2 id="titre-qui-suis-je">Mon parcours</h2>
                         <div class="formulaire">
                             <p class="p-presentation-de-soi">
-                                En tant que première génération de la réforme des lyçées de 2020, je suis diplômée d'un <span>baccalauréat général</span>, spécialités <span>Physique</span>, <span>Chimie</span>, <span>SVT</span>, <span>option mathématiques complémentaires</span>.
+                                En tant que première génération de la réforme des lyçées de 2020, je suis diplômée d'un <span>baccalauréat général</span>, spécialités <span>Physique</span>, <span>Chimie</span>, <span>SVT</span>, <span>option mathématiques complémentaires</span> (il n'y a pas de rapport avec l'informatique oui).
                             </p>
                             <p class="p-presentation-de-soi">   
-                                J'ai commencé les études supérieures par <span>une année de médecine</span> (PASS). Comprenant rapidement que cette année ne serait pas concluante, je suis rentrée en <span>L1 de physique-chimie</span> l'année suivante, pour y développer et consolider mais connaissances en sciences avant de passer un concours afin d'étudier la médecine dentaire dans un autre pays.
+                                J'ai commencé les études supérieures par <span>une année de médecine</span> (PASS). Comprenant rapidement que cette année ne serait pas concluante, je suis rentrée en <span>L1 de physique-chimie</span> l'année suivante, pour y développer mais connaissances en sciences avant de passer un concours afin d'étudier la médecine dentaire dans un autre pays.
                             </p>
                             <p class="p-presentation-de-soi">
-                                Cette année était très intérressante mais m'a permis de voir que<span> le domaine médicale n'était pas ce qui me plaisait</span>, ce qui m'animait. 
+                                Cette année était très intérressante mais m'a permis de comprendre que<span> le domaine médicale n'était pas ce qui me plaisait</span>, ce qui m'animait. 
                             </p>
                             <p class="p-presentation-de-soi">
                                 J'ai donc recherché une filière qui correspondrait à mes objectifs de vie future et à mon caractère. Un domaine qui me permettrait de travailler <span>partout dans le monde</span> et de <span>continuellement apprendre de nouvelles choses.</span>
@@ -181,18 +179,26 @@
                 </div>
 
             </section>
+            <section id="section-hobby" >
+
+            </section>
         </main>
 
         <!-- FOOTER -->
         <footer id="footer">
             <div class="bloc-contact">
                 <div class="bloc-numTel-Email">
-                    <h2>CONTACTS</h2>
+                    <h2 class="h2_questions">Vous êtes à la recherche d'une personne motivée et prête à s'engager dans votre entreprise ?</h2>
+                    <div class="liens">
+                        <a href="../ressources/pdf/CV_Tamara_Benghezal.pdf" download="CV_Tamara_Benghezal.pdf" target="_blank">Mon CV</a>
+                        <a href="https://www.linkedin.com/in/tamara-benghezal-5a9a5327a" target="_blank">Mon LinkedIn</a>
+                    </div>
+                </div>
+                <div class="separator separatorContact"></div>
+                <div class="bloc-numTel-Email">
+                    <h2>CONTACTONS-NOUS !</h2>
                     <p>07 68 41 05 77</p>
                     <p>benghezalt@gmail.com</p>
-                </div>
-                <div class="bloc-formulaire-contact">
-                    
                 </div>
             </div>
         </footer>

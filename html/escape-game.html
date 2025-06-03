@@ -8,9 +8,22 @@
     </head>
 
     <body>
+        
+        <header>
+            <nav class="navbar"> <!--menu déroulant-->
+                <a href="portfolio.html#" id="logo">Tamara Benghezal</a>
+                <div class="accueil">
+                    <a class="surligne" href="portfolio.html">PAGE D'ACCUEIL</a></div>
+                </div>
+                <div class="parcours">
+                    <a class="surligne" href="apprentissages.html">APPRENTISSAGE</a>
+                </div>
+                <div id="contact"><a href="apprentissages.html#footer">CONTACT</a></div>
+            </nav>
+        </header>
         <section id="presentation-du-projet">
             <div class="bouton-retour-area">
-                <a href="portfolio.html#projets">Retour à la page principale</a>
+                <!-- <a href="portfolio.html#projets">Retour à la page principale</a> -->
                 <p>
                     <!--Durée :<span> 3 mois</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
                     Année universitaire : BUT 1
@@ -30,7 +43,7 @@
                 <button class="prev" onclick="prevSlide()">&#9650;</button>
                 <button class="next" onclick="nextSlide()">&#9660;</button>
             </div>
-            <script src="script2.js"></script>
+            <script src="../js/script2.js"></script>
 
             <div class="slider_fond"></div>
             <div class="presentation-du-projet-bloc"> 
@@ -124,5 +137,24 @@
         <div class="bouton-retour-area">
             <a href="portfolio.html#projets">Retour à la page principale</a>
         </div>
+        
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="bloc-contact">
+                <div class="bloc-numTel-Email">
+                    <h2 class="h2_questions">Vous êtes à la recherche d'une personne motivée et prête à s'engager dans votre entreprise ?</h2>
+                    <div class="liens">
+                        <a href="../ressources/pdf/CV_Tamara_Benghezal.pdf" download="CV_Tamara_Benghezal.pdf" target="_blank">Mon CV</a>
+                        <a href="https://www.linkedin.com/in/tamara-benghezal-5a9a5327a" target="_blank">Mon LinkedIn</a>
+                    </div>
+                </div>
+                <div class="separator separatorContact"></div>
+                <div class="bloc-numTel-Email">
+                    <h2>CONTACTONS-NOUS !</h2>
+                    <p>07 68 41 05 77</p>
+                    <p>benghezalt@gmail.com</p>
+                </div>
+            </div>
+        </footer>
     </body>
 </HTML>

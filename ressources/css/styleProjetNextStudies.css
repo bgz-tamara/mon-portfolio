@@ -32,14 +32,8 @@ body {
     margin: auto;
     padding: 0;
     height: 100vh;
-    /*background:url('images_accueil/fondBlancCercle.jpg');
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;*/
     background-color:#FDF0E7;
-    /* pour effet de soulignage du menu au survol : 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;*/
+
     overflow-x: hidden;
     max-width: 1920px;
 
@@ -52,6 +46,111 @@ main {
     max-width: 1920px;
 }
 
+
+/*  BARRE DE NAV  */
+
+header { /* pas sûr que tout soit nécessaire */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top:0;
+    width: 100%;
+    max-width: 1920px;
+    /*transition: background-color 0.4s ease-in-out ;*/
+    z-index: 100;
+}
+
+
+/*barre de nav : menus (accueil,contact..)*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    padding: 25px 60px;
+    max-width: 1920px;
+    background: transparent;
+    transition: background-color 0.5s ease;
+}
+
+.surligne {
+    color: white;
+    font-family: Poppins;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 15px;
+    padding-bottom: 3%;
+    position: relative;
+    display: inline-block;
+    text-wrap: nowrap;
+}
+
+/* Animation de surlignement */
+
+.surligne::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 0px; /* Distance entre le texte et la ligne */
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  transition: transform 0.4s ease;
+}
+
+.surligne.noir::after {
+  background-color: black;
+}
+
+.surligne:hover::after {
+  transform: translateX(-50%) scaleX(1);
+} 
+
+/* Bouton de contact */
+nav #contact {
+    background: #092327;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+nav #contact a {
+    font-family: Poppins;
+    color: #F8F9FA;
+    text-decoration: none;
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav #contact:hover {
+    background-color: #216358;
+    transition: all 0.5s ;
+}
+
+nav #contact:hover a {
+    color: #fff ;
+}
+
+/*logo : TAMARA BENGHEZAL*/
+#logo {
+    font-size: 1.6em;
+    color: white;
+    font-family: Miagara; 
+    font-weight: 600;
+    text-decoration: none;
+    position: absolute;
+    left: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+#logo:hover{
+    transition: 0.1s ease-in-out; /*a voir pour faire meilleure transition parce que ca ne marche pas pour le moment*/
+    opacity: 50%;
+}
 
 
 /* TITRE + TEXTE DE PRSENTATIION DU PROJET */
