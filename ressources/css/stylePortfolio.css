@@ -183,7 +183,7 @@ nav #contact:hover a {
 }
 
 #texte_banniere {
-    margin-top: -12%;
+    margin-top: -11%;
     padding: 0;
 
     width: 100%;
@@ -223,7 +223,7 @@ path {
         stroke-dashoffset: 0;
     }
     100% {
-        stroke-dashoffset: -70; /* avance d’un segment + espace */
+        stroke-dashoffset: -60; /* avance d’un segment + espace */
     }
 }
 
