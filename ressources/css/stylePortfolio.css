@@ -39,6 +39,7 @@ body {
     background-color:#092327; /*FDF0E7;*/
     background-attachment: fixed;
     max-width: 1920px;
+    cursor: default;
 }
 
 main {
