@@ -137,10 +137,9 @@ nav #contact:hover a {
 
 /*logo : TAMARA BENGHEZAL*/
 #logo {
-    font-size: 1.6em;
-    color: white;
-    font-family: Miagara; 
-    font-weight: 600;
+    font-size: 1.2em;
+    font-family: Poppins;
+    color: #F8F9FA;
     text-decoration: none;
     position: absolute;
     left: 25px;
@@ -172,7 +171,7 @@ nav #contact:hover a {
     
     background-image: url('../img/img_accueil_3/banniere-accueil-waving-8.png');
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 75%;
     background-position-y: center;
     background-position-x: center;
 
@@ -183,7 +182,7 @@ nav #contact:hover a {
 }
 
 #texte_banniere {
-    margin-top: -11%;
+    margin-top: -8%;
     padding: 0;
 
     width: 100%;
@@ -198,14 +197,21 @@ svg {
     position: relative;
     width: 400px;
     height: 200px;
-    left: 18%;
+    top: 3%;
+    left: 17%;
+}
+
+@media (max-height: 750px) {
+  svg {
+    top: 10%; /* ou ce que tu veux */
+  }
 }
 
 .svg-rotate {
     width: 400px;
     height: 200px;
     left: -35%;
-    top: -355px;
+    top: -325px;
     transform: rotate(186deg); /* 🔁 retourne le trait */
 }
 
@@ -236,13 +242,13 @@ path {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    font-size: 18px;
+    font-size: 16px;
 
-    max-width: 800px;
+    max-width: 750px;
 
     position: relative;
     top: 70px;
-    left: 22%;
+    left: 24%;
 }
 
 .titre_nom {
@@ -255,10 +261,10 @@ path {
     color: #1E332F;/*rgb(11, 62, 106);*/
     Font-family: Miagara;
     font-weight: 200;
-    font-size: 3.5em;
+    font-size: 3.3em;
 
     padding-bottom: 2%;
-    width: 70%;
+    width: 60%;
     text-align: start;
     margin: 0 0 0 10%;
 }
@@ -286,7 +292,7 @@ path {
     font-family: Miagara;
     font-weight: 200;
     color: #F8F9FA;
-    font-size: 4.5em;
+    font-size: 3.5em;
     text-align: start;
     margin: 0;
 } 
@@ -300,10 +306,11 @@ path {
 }
 
 .debut {
-    /* top: 10%; */
-    left: 15%;
+    top: 2%;
+    left: 20%;
     width: 40%;
 }
+
 
 .milieu {
     color: #fdb024;/*rgb(11, 62, 106);*/
@@ -312,7 +319,7 @@ path {
     left: 14%;
     font-size: 3.4em;
     font-weight: 100;
-    font-family: Miagara;
+    font-family: Poppins;/*Miagara;
     -webkit-text-stroke-width: 0.5px;
     /* -webkit-text-stroke-color: rgb(74, 59, 9); */
     text-shadow: #000000;
@@ -334,19 +341,31 @@ path {
 
 /* //////////////////// SECTION QUI SUIS JE ? /////////////////*/
 
+/* //effet dome// */
+
+
+
 #presentation-de-soi {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a1a;
+     background-color: #113837; /*#1a1a1a; */
 
     margin: 0 auto;
     width: 100%;
     height: 1000px;
     max-width: 1920px;
     padding: 150px 0;
-    clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%);
+    /* clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%); */
+    /* border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+    border-top-left-radius: 200vw 100px;
+    border-top-right-radius: 200vw 100px; */
+    overflow: hidden;
 }
 
 #presentation-de-soi.section_parcours {
@@ -356,16 +375,36 @@ path {
 .separator {
     width: 0;
     height: 600px;
-    border: #F8F9FA 1px solid;
+    border: #092327 1px solid;
 }
 
 .separatorContact {
+    border: #F8F9FA 1px solid;
     height: 300px;
 }
+/* TITRE DE LA PAGE ///////*/
 
-#presentation-de-soi h2 {
+#projet h2, #titre-qui-suis-je, #titre_parcours {
+    width: 100%;
+    text-align: center;
+    
+    color: #fdb024;
+    font-size: 3.5em;
+    font-weight: 300;
+    font-family: Poppins;
+    text-decoration: none
+}
+
+ #titre-qui-suis-je {
+    text-align: end;
     color: #F8F9FA;
+    padding-right: 4%;
+ }
+
+#titre_parcours {
     margin-bottom: 0;
+    color: #F8F9FA;
+    text-align: start;
 }
 
 .presentation-de-soi-bloc {
@@ -374,14 +413,14 @@ path {
     justify-content: center;
     align-items: center;
 
-    width: 1300px;
-    gap: 100px;
+    width: 80%;
+    gap: 90px;
     height: 100%;
 }
 
 .formBox{
-    max-width: 85%;
-    gap: 70px;
+    max-width: 80%;
+    gap: 50px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -397,23 +436,38 @@ path {
     align-items: center;
     gap: 40px;
 
-    color: #7ba59d;
+    color: #F8F9FA;
     font-family: Poppins;
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-align: center;
 }
 
-
 #presentation-de-soi .liens img {
-    width: 130px;
-    height: 130px;
-    transition: transform 0.5s ease-in-out; /* La transition est définie ici */
-    transform: scale(1); /* Position de départ */ 
+    width: 120px;
+    height: 120px;
     cursor: pointer;
+    border-radius: 60px;
+    background-color: #F8F9FA;
 }
 
-#presentation-de-soi .liens img:hover {
-    transform: scale(1.05);
+#presentation-de-soi .liens .lien-linkedIn a img {
+    width: 110px;
+    height: 110px;
+}
+
+.vignette_liens img {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1.2s ease-out, transform 0.6s ease-out;
+}
+
+.vignette_liens.visible img {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.vignette_liens img:hover {
+  transform: translateX(0) scale(1.05); /* combine les deux */
 }
 
 
@@ -434,19 +488,20 @@ path {
 }
 
 #presentation-de-soi .formulaire span {
-    color: #7ba59d;/*bleu fonce : rgb(11, 62, 106);*/
+    color: #71a49a;/*bleu fonce : rgb(11, 62, 106);*/
 }
 
 
 /* ///////////////////// ICONE DE TRANSITION /////////////*/
 
-#transition {
+/* #transition {
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: end;
     max-width: 1920px;
     margin-bottom: -10%;
+    background-color: transparent;
 }
 
 #imageTransitionTamara {
@@ -457,69 +512,69 @@ path {
     width: 25%;
     height: auto;
     transform: scaleX(-1);
-}
-
-
+} */
 
 /*//////////////////// PARTIE PROJET ///////////////////*/
 
 #projet {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 
-    margin-top: -20% ;
-    padding: 8% 0;
+    /* margin-top: -20% ; */
+    padding: 10% 0;
     max-width: 1920px;
     width: 100%;
 
     background-color: transparent;
-    background-image: url('../img/img_accueil_3/projet-fond-5.png');
+    background-image: url('../img/img_accueil_3/projet-maquette-complete.png');
     background-repeat: no-repeat;
-    background-size: 80%;
+    /* background-size: 80%; */
+    background-size: 60%;
     background-position-y: center;
     background-position-x: center;
 }
 
 /* TITRE 'PROJETS' */
 
-#projet h2, #titre-qui-suis-je {
-    width: 100%;
-    text-align: center;
-    
-    color: #F8F9FA;
-    font-size: 4.3em;
-    font-weight: 300;
-    font-family: Miagara;
-    text-decoration: none
-}
-
-#projet h2 {
+#projets {
     /* font-family: 'Courier New', Courier, monospace; */
     /* font-size: 3.5em; */
-    font-weight: 300;
     margin-bottom: 2%;
-    color: #eeeeee;
-    text-align: center;
+    font-size: 3em;
+    font-family: Poppins;
+    color: #fdb024;
 }
 
 #titre-qui-suis-je {
     margin: 0;
 }
 
-/* PARTIE ANIME */
+.text-apparait {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-.slider {
+.text-apparait.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* PARTIE bulles projets */
+
+.grille_projets {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1920px;
+
+    max-width: 1220px;
     padding: 2% 2% 0 2%;
-    width: 90%;
-    gap: 1%;      
+    width: 950px;
+    gap: 5%;      
     border-radius: 50px;     
     /* border : 10px solid #1E332F; */
 }
@@ -532,32 +587,54 @@ path {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    justify-content: end;
+    align-items: start;
 
-    height: 450px;
-    width: 24%;
-    border-radius: 15%;
+    height: 420px;
+    width: 448px;
+    margin: 2% 0;
+    gap: 5%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1); 
+    /* border: 5px solid #1E332F;  */
+    border: 0.5px solid #092327; 
+    border-radius: 30px;
 
-    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
-    border: 5px solid #1E332F;  */
+    /* width: 100%;
+    height: 100%; */
+    background-image: url('../img/img_accueil_3/bulle_projet.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    
+    /* animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.bloc-1-projet .image_projet {
+/* .bloc-1-projet .image_projet {
     width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    /* width: 100%;
     height: 60%;
     border-radius: 30%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: transparent;
-}
+    background-color: transparent; 
+} */
 
-.bloc-1-projet:nth-child(1) .image_projet{
+
+/* .bloc-1-projet:nth-child(1) .image_projet{
     background-image: url('../img/img_accueil_3/mytho-miniature.png');
-}
+} */
 
-.bloc-1-projet:nth-child(2) .image_projet{
+/* .bloc-1-projet:nth-child(2) .image_projet{
     background-image: url('../img/img_accueil_3/train-miniature.png');
 }
 
@@ -567,29 +644,76 @@ path {
 
 .bloc-1-projet:nth-child(4) .image_projet{
     background-image: url('../img/img_accueil_3/next-study-miniature.png');
-}
+} */
 
 /* TITRES/LIENS DES PROJETS */
 
-.bloc-1-projet a {
+/* .bloc-1-projet a {
     text-align: center;
-    width: 90%;
+    width: 100%;
     padding: 2% 0;
     font-size: 1.8em;
     color: #dedede;
     font-family: Poppins;
     text-decoration: none;
+} */
+
+
+/* TITRES DE CHAQUE PROJET */
+.titre_projet {
+    text-align: start;
+    width: 60%;
+    padding: 7% 12% 10%;
+    font-size: 1.6em;
+    color: #71a49a;
+    font-family: Poppins;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
-.bloc-1-projet a:hover {
-    transition: all 0.3s ;
+/* LANGAGES DE CHAQUE PROJET */
+.technos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    padding: 12px 8%;
+}
+
+.techno_projet {
+    text-align: start;
+    width: 100%;
+    padding: 0;
+    font-size: 1.0em;
+    color: #092327;
+    font-family: Poppins;
+    margin: 0 10px 10px;
+}
+
+/* ANIMATION DES BULLES PROJETS */
+
+.bloc-1-projet.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .bloc-1-projet:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ;
+    transform: scale(1.01);
+    /* transition: all 0.3s ; */
 }
+
+.bloc-1-projet:hover .titre_projet {
+  color: #fdb024;
+}
+
+
+/* .bloc-1-projet a:hover {
+    transition: all 0.3s ;
+} */
+
+
 
 
 
@@ -609,9 +733,9 @@ path {
 
 .timeline {
     position: relative;
-    width: 5px;
+    width: 3px;
     height: 100%;
-    background-color: #1E332F;
+    background-color: #092327;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -636,7 +760,7 @@ path {
 .step p {
     margin: 0;
     margin-left: 40px;
-    font-size: 14px;
+    font-size: 16px;
     color: transparent;
 }
 
@@ -738,13 +862,18 @@ path {
     gap: 5%;
 }
 
+#footer .bloc-contact .bloc-numTel-Email p {
+    color: #fdb024;
+}
+
 #footer .bloc-contact .bloc-numTel-Email .liens a {
     text-decoration: none;
-    color: #F8F9FA;
+    color: #fdb024;
+    font-size: 1.2em;
     padding: 2% 0;
 }
 #footer .bloc-contact .bloc-numTel-Email .liens a:hover {
-    color: #b9b9b9;
+    color: #71a49a;
 
 }
 

@@ -38,4 +38,41 @@ const delays = [0, 800, 1500, 2100, 3100]; // ajustables pour chaque élément
   });
 });
 
+/* transition du texte Qui Suis-Je ? ////////*/
+document.addEventListener("DOMContentLoaded", () => {
+  const textes = document.querySelectorAll(".text-apparait");
+  const vignettes = document.querySelectorAll(".vignette_liens");
+  const projets = document.querySelectorAll(".bloc-1-projet");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2 
+  });
+
+  textes.forEach((el, index) => {
+    // el.style.transitionDelay = `${index * 0.3}s`;
+    observer.observe(el);
+  });
+
+  projets.forEach((el, index) => {
+    el.style.transitionDelay = "0.2s";
+    observer.observe(el);
+  });
+
+  vignettes.forEach((el, index) => {
+  const img = el.querySelector("img");
+  if (img) {
+    // img.style.transitionDelay = index === 0 ? '0s' : `${index * 0.4}s`;
+  }
+  observer.observe(el);
+  });
+});
+
+
 
