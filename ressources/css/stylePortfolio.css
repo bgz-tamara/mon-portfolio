@@ -540,7 +540,7 @@ path {
 }
 
 #presentation-de-soi .p-presentation-de-soi, #footer .bloc-contact .bloc-numTel-Email p, #footer .bloc-contact .bloc-numTel-Email h2 {
-    color: #fdb024; /*F8F9FA;*/
+    color: rgba(229, 238, 246, 0.95); /*F8F9FA;fdb024*/
     font-family: Poppins;
     font-size: 1.3em;
 }
@@ -550,7 +550,7 @@ path {
 }
 
 #presentation-de-soi .formulaire span {
-    color: #4e9486; /* 71a49a;/*bleu fonce : rgb(11, 62, 106);*/
+    color: #fdb124d9; /* 71a49a;/*bleu fonce : rgb(11, 62, 106); bleu canard : 4e9486 */
 }
 
 
