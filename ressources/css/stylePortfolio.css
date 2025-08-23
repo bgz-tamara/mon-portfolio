@@ -213,7 +213,7 @@ svg {
     height: 200px;
     left: -35%;
     top: -325px;
-    transform: rotate(186deg); /* 🔁 retourne le trait */
+    transform: rotate(186deg); /* retourne le trait */
 }
 
 path {
@@ -351,13 +351,19 @@ path {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-     background-color: #113837; /*#1a1a1a; */
+    /* background-color:  #fdb024; #113837;#1a1a1a; */
+    
+    background-image: url('../img/img_accueil_3/fond_qui_suis_je_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    background-position-x: center;
 
     margin: 0 auto;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     max-width: 1920px;
-    padding: 150px 0;
+    padding: 160px 0;
     /* clip-path: polygon(0 150px, 100% 0, 100% calc(100% - 150px), 0 100%); */
     /* border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -370,16 +376,20 @@ path {
 }
 
 #presentation-de-soi.section_parcours {
+    background-image: url('../img/img_accueil_3/fond_parcours_1.png');
     margin-bottom: 50px;
+    height: 80vh;
+    padding: 0 0 160px 0;
 }
 
-.separator {
+/* .separator {
     width: 0;
     height: 600px;
     border: #092327 1px solid;
-}
+} */
 
 .separatorContact {
+    width: 0;
     border: #F8F9FA 1px solid;
     height: 300px;
 }
@@ -390,22 +400,22 @@ path {
     text-align: center;
     
     color: #fdb024;
-    font-size: 3.5em;
+    font-size: 3.4em;
     font-weight: 300;
     font-family: Poppins;
     text-decoration: none
 }
 
  #titre-qui-suis-je {
-    text-align: end;
-    color: #F8F9FA;
+    text-align: center;
+    color: #ffffff; /*foncé de fou : 092327  blanc : F8F9FA;*/
     padding-right: 4%;
  }
 
 #titre_parcours {
     margin-bottom: 0;
     color: #F8F9FA;
-    text-align: start;
+    text-align: center;
 }
 
 .presentation-de-soi-bloc {
@@ -414,18 +424,33 @@ path {
     justify-content: center;
     align-items: center;
 
-    width: 80%;
-    gap: 90px;
+    width: 100%;
+    /* gap: 300px; */
     height: 100%;
+}
+#pacours {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    /* gap: 300px; */
+    height: 100%;
+
 }
 
 .formBox{
-    max-width: 80%;
+    width: 50%;
     gap: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
+}
+
+#pacours .formBox {
+    width: 75%;
 }
 
 /* PARTIE ICONES a GAUCHE */
@@ -436,13 +461,43 @@ path {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    width: 50%;
 
-    color: #F8F9FA;
+    color: #F8F9FA; /*F8F9FA;*/
     font-family: Poppins;
     font-size: 1.0em;
     text-align: center;
 }
 
+.liensPro {
+    justify-content: center;
+    gap: 210px;
+    align-items: flex-start;
+    font-size: 2.0em;
+    height: 100%;
+}
+
+.liensPro p  {
+    color: #F8F9FA; /*F8F9FA;*/
+    text-decoration: none;
+}
+
+.lien-GitHub {
+    padding-left: 180%;
+}
+
+.lien-CV {
+    padding-left: 520px;
+}
+
+.lien-linkedIn {
+    padding-left: 310px;
+}
+
+.liensContact {
+    color: #fdb024; /*F8F9FA;*/
+}
+/* 
 #presentation-de-soi .liens img {
     width: 120px;
     height: 120px;
@@ -454,20 +509,26 @@ path {
 #presentation-de-soi .liens .lien-linkedIn a img {
     width: 110px;
     height: 110px;
-}
+} */
 
-.vignette_liens img {
+/* .vignette_liens img {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1.2s ease-out, transform 0.6s ease-out;
+} */
+
+.vignette_liens {
   opacity: 0;
   transform: translateX(-20px);
   transition: opacity 1.2s ease-out, transform 0.6s ease-out;
 }
 
-.vignette_liens.visible img {
+.vignette_liens.visible /*img*/ {
   opacity: 1;
   transform: translateX(0);
 }
 
-.vignette_liens img:hover {
+.vignette_liens /*img:hover*/ {
   transform: translateX(0) scale(1.05); /* combine les deux */
 }
 
@@ -475,13 +536,13 @@ path {
 /* PARTIE TEXTUELLE A DROITE */
 
 #presentation-de-soi .formulaire {
-    width: 100%;
+    width: 80%;
 }
 
 #presentation-de-soi .p-presentation-de-soi, #footer .bloc-contact .bloc-numTel-Email p, #footer .bloc-contact .bloc-numTel-Email h2 {
-    color: #F8F9FA;
+    color: #fdb024; /*F8F9FA;*/
     font-family: Poppins;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 #presentation-de-soi .p-presentation-de-soi {
@@ -489,7 +550,7 @@ path {
 }
 
 #presentation-de-soi .formulaire span {
-    color: #71a49a;/*bleu fonce : rgb(11, 62, 106);*/
+    color: #4e9486; /* 71a49a;/*bleu fonce : rgb(11, 62, 106);*/
 }
 
 
@@ -728,7 +789,7 @@ path {
 .timeline-container {
     position: relative;
     top: -50px;
-    width: 200px;
+    width: 28%;
     height: 400px;
 }
 
