@@ -376,7 +376,7 @@ path {
 }
 
 #presentation-de-soi.section_parcours {
-    background-image: url('../img/img_accueil_3/fond_parcours_1.png');
+    background-image: url('../img/img_accueil_3/fond_parcours_2.png');
     margin-bottom: 50px;
     height: 80vh;
     padding: 0 0 160px 0;
@@ -477,9 +477,8 @@ path {
     height: 100%;
 }
 
-.liensPro p  {
+.liensPro a p  {
     color: #F8F9FA; /*F8F9FA;*/
-    text-decoration: none;
 }
 
 .lien-GitHub {
@@ -487,6 +486,7 @@ path {
 }
 
 .lien-CV {
+    margin-top: -50px;
     padding-left: 520px;
 }
 
@@ -526,6 +526,7 @@ path {
 .vignette_liens.visible /*img*/ {
   opacity: 1;
   transform: translateX(0);
+    text-decoration: none;
 }
 
 .vignette_liens /*img:hover*/ {
@@ -795,9 +796,9 @@ path {
 
 .timeline {
     position: relative;
-    width: 3px;
-    height: 100%;
-    background-color: #092327;
+    width: 5px;
+    height: 90%;
+    background-color: #1138377e;
     margin: 0 auto;
     border-radius: 5px;
 }
@@ -815,7 +816,7 @@ path {
     width: 20px;
     height: 20px;
     background-color: rgb(255, 255, 255);
-    border: 3px solid #FDF0E7;
+    border: 3px solid #F8F9FA;
     border-radius: 50%;
 }
 
@@ -829,10 +830,10 @@ path {
 .cursor {
     position: absolute;
     top: 0;
-    left: -2px;
-    width: 10px;
-    height: 10px;
-    background-color: #FDF0E7;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: #F8F9FA;
     border-radius: 50%;
     box-shadow: 0 0 10px #FDF0E7;
     animation: moveCursor 6s infinite linear;
@@ -843,13 +844,13 @@ path {
         top: 0;
     }
     33% {
-        top: 130px; /* Position pour l'étape 1 */
+        top: 120px; /* Position pour l'étape 1 */
     }
     66% {
-        top: 260px; /* Position pour l'étape 2 */
+        top: 240px; /* Position pour l'étape 2 */
     }
     100% {
-        top: 400px; /* Fin du parcours */
+        top: 360px; /* Fin du parcours */
     }
 }
 
