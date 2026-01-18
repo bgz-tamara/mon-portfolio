@@ -23,7 +23,7 @@
 }
 
 
- /* HTML */
+/* HTML */
 
 html {
     background: #fff;
@@ -93,25 +93,25 @@ nav {
 /* Animation de surlignement */
 
 .surligne::after {
-  content: " ";
-  position: absolute;
-  left: 50%;
-  bottom: 0px; /* Distance entre le texte et la ligne */
-  transform: translateX(-50%) scaleX(0);
-  transform-origin: center;
-  height: 1px;
-  width: 100%;
-  background-color: white;
-  transition: transform 0.4s ease;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0px; /* Distance entre le texte et la ligne */
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    transition: transform 0.4s ease;
 }
 
 .surligne.noir::after {
-  background-color: black;
+    background-color: black;
 }
 
 .surligne:hover::after {
-  transform: translateX(-50%) scaleX(1);
-} 
+    transform: translateX(-50%) scaleX(1);
+}
 
 /* Bouton de contact */
 nav #contact {
@@ -169,7 +169,7 @@ nav #contact:hover a {
 .banniere-accueil-waving {
     margin: 0 auto;
     height: 100vh;
-    
+
     background-image: url('../img/img_accueil_3/banniere-accueil-waving-8.png');
     background-repeat: no-repeat;
     background-size: 75%;
@@ -203,9 +203,9 @@ svg {
 }
 
 @media (max-height: 750px) {
-  svg {
-    top: 10%; /* ou ce que tu veux */
-  }
+    svg {
+        top: 10%; /* ou ce que tu veux */
+    }
 }
 
 .svg-rotate {
@@ -237,7 +237,7 @@ path {
 
 /* PARTIE TEXTE DE L'EN-TETE L'ACCUEIL */
 
-.texte_accueil { 
+.texte_accueil {
     /* fond*/
     display: flex;
     flex-direction: column;
@@ -285,7 +285,7 @@ path {
     text-align: start;
     z-index: 1;
     color: #277364;
-} 
+}
 
 
 .titre2 {
@@ -296,7 +296,7 @@ path {
     font-size: 3.5em;
     text-align: start;
     margin: 0;
-} 
+}
 
 .debut, .milieu, .fin {
     position: relative;
@@ -335,8 +335,8 @@ path {
 }
 
 .visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -352,7 +352,7 @@ path {
     justify-content: center;
     align-items: center;
     /* background-color:  #fdb024; #113837;#1a1a1a; */
-    
+
     background-image: url('../img/img_accueil_3/fond_qui_suis_je_2.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -398,19 +398,28 @@ path {
 #projet h2, #titre-qui-suis-je, #titre_parcours {
     width: 100%;
     text-align: center;
-    
+
     color: #fdb024;
-    font-size: 3.4em;
+    font-size: 3.0em;
     font-weight: 300;
     font-family: Poppins;
     text-decoration: none
 }
 
- #titre-qui-suis-je {
+@media (max-width: 1365px) {
+    #titre-qui-suis-je {
+        font-size: 3.0em;
+    }
+    #presentation-de-soi .p-presentation-de-soi {
+        font-size: 1.0em;
+    }
+}
+
+#titre-qui-suis-je {
     text-align: center;
     color: #ffffff; /*foncé de fou : 092327  blanc : F8F9FA;*/
     padding-right: 4%;
- }
+}
 
 #titre_parcours {
     margin-bottom: 0;
@@ -497,7 +506,7 @@ path {
 .liensContact {
     color: #fdb024; /*F8F9FA;*/
 }
-/* 
+/*
 #presentation-de-soi .liens img {
     width: 120px;
     height: 120px;
@@ -511,26 +520,27 @@ path {
     height: 110px;
 } */
 
-/* .vignette_liens img {
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 1.2s ease-out, transform 0.6s ease-out;
-} */
+.vignette_liens img {
+    transform: translateX(-50px);
+    width: 150px;
+    height: 150px;
+    transition: opacity 1.2s ease-out, transform 0.6s ease-out;
+}
 
 .vignette_liens {
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 1.2s ease-out, transform 0.6s ease-out;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 1.2s ease-out, transform 0.6s ease-out;
 }
 
 .vignette_liens.visible /*img*/ {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
     text-decoration: none;
 }
 
 .vignette_liens /*img:hover*/ {
-  transform: translateX(0) scale(1.05); /* combine les deux */
+    transform: translateX(0) scale(1.05); /* combine les deux */
 }
 
 
@@ -543,7 +553,7 @@ path {
 #presentation-de-soi .p-presentation-de-soi, #footer .bloc-contact .bloc-numTel-Email p, #footer .bloc-contact .bloc-numTel-Email h2 {
     color: rgba(229, 238, 246, 0.95); /*F8F9FA;fdb024*/
     font-family: Poppins;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 #presentation-de-soi .p-presentation-de-soi {
@@ -570,7 +580,7 @@ path {
 #imageTransitionTamara {
     position: relative;
     top: -270px;
-    left: 10%;    
+    left: 10%;
     z-index: 99;
     width: 25%;
     height: auto;
@@ -615,14 +625,14 @@ path {
 }
 
 .text-apparait {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .text-apparait.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* PARTIE bulles projets */
@@ -637,15 +647,15 @@ path {
     max-width: 1220px;
     padding: 2% 2% 0 2%;
     width: 950px;
-    gap: 5%;      
-    border-radius: 50px;     
+    gap: 5%;
+    border-radius: 50px;
     /* border : 10px solid #1E332F; */
 }
 
 
- /* BLOC DE CHAQUE PROJET */
+/* BLOC DE CHAQUE PROJET */
 
- 
+
 .bloc-1-projet {
     cursor: pointer;
     display: flex;
@@ -657,9 +667,9 @@ path {
     width: 448px;
     margin: 2% 0;
     gap: 5%;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
     /* border: 5px solid #1E332F;  */
-    border: 0.5px solid #092327; 
+    border: 0.5px solid #092327;
     border-radius: 30px;
 
     /* width: 100%;
@@ -669,7 +679,7 @@ path {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: transparent;
-    
+
     /* animation */
     opacity: 0;
     transform: translateY(20px);
@@ -689,7 +699,7 @@ path {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: transparent; 
+    background-color: transparent;
 } */
 
 
@@ -758,8 +768,8 @@ path {
 /* ANIMATION DES BULLES PROJETS */
 
 .bloc-1-projet.visible {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .bloc-1-projet:hover {
@@ -768,7 +778,7 @@ path {
 }
 
 .bloc-1-projet:hover .titre_projet {
-  color: #fdb024;
+    color: #fdb024;
 }
 
 
@@ -939,4 +949,3 @@ path {
     color: #71a49a;
 
 }
-
