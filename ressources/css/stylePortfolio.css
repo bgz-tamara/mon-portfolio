@@ -400,10 +400,19 @@ path {
     text-align: center;
     
     color: #fdb024;
-    font-size: 3.4em;
+    font-size: 3.0em;
     font-weight: 300;
     font-family: Poppins;
     text-decoration: none
+}
+
+@media (max-width: 1365px) {
+    #titre-qui-suis-je {
+        font-size: 3.0em;
+    }
+    #presentation-de-soi .p-presentation-de-soi {
+        font-size: 1.0em;
+    }
 }
 
  #titre-qui-suis-je {
@@ -511,11 +520,12 @@ path {
     height: 110px;
 } */
 
-/* .vignette_liens img {
-  opacity: 0;
-  transform: translateX(-20px);
+.vignette_liens img {
+    transform: translateX(-50px);
+    width: 150px;
+    height: 150px;
   transition: opacity 1.2s ease-out, transform 0.6s ease-out;
-} */
+}
 
 .vignette_liens {
   opacity: 0;
@@ -543,7 +553,7 @@ path {
 #presentation-de-soi .p-presentation-de-soi, #footer .bloc-contact .bloc-numTel-Email p, #footer .bloc-contact .bloc-numTel-Email h2 {
     color: rgba(229, 238, 246, 0.95); /*F8F9FA;fdb024*/
     font-family: Poppins;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 #presentation-de-soi .p-presentation-de-soi {

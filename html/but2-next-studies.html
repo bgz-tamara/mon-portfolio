@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../ressources/css/styleProjetNextStudies.css" rel="stylesheet">
+        <link href="../ressources/css/styleProjetMytho.css" rel="stylesheet">
         <title>Next Studies - Benghezal Tamara</title>
     </head>
 
@@ -12,25 +12,12 @@
         <header>
             <nav class="navbar"> <!--menu déroulant-->
                 <a href="#" id="logo">Année universitaire : BUT 2</a>
-                <div class="accueil">
-                    <a class="surligne" href="portfolio.html#projets">PAGE D'ACCUEIL</a></div>
+                <div class="bouton-retour-bloc">
+                    <a href="portfolio.html#projets"><img src="../ressources/img/img_mytho/bouton_retour.png" alt="bouton de retour à la page d'accueil">Page d'accueil</a>
                 </div>
-                <div class="parcours">
-                    <a class="surligne" href="apprentissages.html">APPRENTISSAGES</a>
-                </div>
-                <div id="contact"><a href="portfolio.html#footer">CONTACT</a></div>
             </nav>
         </header>
-        
-        <section id="presentation-du-projet">
-            <!-- <div class="bouton-retour-area">
-                <a href="portfolio.html#projets">Retour à la page principale</a>
-                <p> -->
-                    <!--Durée :<span> 3 mois</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-                    <!-- Année universitaire : BUT 2 -->
-                    <!--Équipe : <span>4 développeurs</span>-->
-                <!-- </p>
-            </div> -->
+        <section id="presentation-generale-du-projet">
             <!--  SLIDER ACCUEIL -->
             <div class="slider-container">
                 <div class="slider">
@@ -39,12 +26,13 @@
                     <img src="../ressources/img/imgNextStudies/creation-next-studies.png" alt="Image 3">
                     <img src="../ressources/img/imgNextStudies/classement-next-studies.png" alt="Image 4">
                 </div>
-                <button class="prev" onclick="prevSlide()">&#10094;</button>
-                <button class="next" onclick="nextSlide()">&#10095;</button>
+                <button class="prev" onclick="prevSlide()">&#9650;</button>
+                <button class="next" onclick="nextSlide()">&#9660;</button>
             </div>
-            <script src="../js/script.js"></script>
+            <h2 id="titre-projet">Next <span>Studies</span> </h2> 
+            <div class="slider_separation"></div>
+            <script src="../js/script2.js"></script>
 
-            <div class="slider_fond"></div>
             <div class="presentation-du-projet-bloc"> 
                 <div class="text-presentation-projet">
                         <p class="p-presentation-du-projet1">
@@ -57,15 +45,25 @@
                         </p>
                 </div>
             </div>
-            <div class="slider_fond"></div>
-            <a href="#presentation-next-studie" class="rounded-button">
-                <span class="arrow">Le projet &#9660;</span>
+
+
+            <div class="navigation_buttons">
+            <a href="#resume-bloc" class="rounded-button">
+                <p class="arrow">Résumé</p>
             </a>
+            <a href="#contribution-bloc" class="rounded-button">
+                <p class="arrow">Contribution</p>
+            </a>
+            <a href="#presentation-competences" class="rounded-button">
+                <p class="arrow">Compétences</p>
+            </a>
+            </div>
+
         </section>
 
-        <section id="presentation-next-studie">
+        <section id="resume-bloc">
             <div class="presentation-du-projet-bloc">
-                <h2 id="titre-projet">next studies</h2> 
+                <h2 id="titre-projet">Résumé</h2> 
                 <div class="text-presentation-projet">
                         <p class="p-presentation-du-projet1">
                         <span>Next Studies</span> est donc un projet d’<span>applications web</span> visant à proposer un support dédié à aider le jury du conseil de poursuite d’études de l’IUT de Montpellier-Sète (conseil PE) à donner des avis sur les voeux de poursuite d’études formulés par les élèves de dernière année de BUT informatique. Ce jury, constitué des professeurs et du responsable de poursuites d’études, peut se servir de cette plateforme afin de visualiser les notes des étudiants, leur évolution, connaître leurs vœux et donner leur avis sur ceux-ci. Le site permet donc un accès et des fonctionnalités adaptés aux quatre types d’utilisateurs identifiés</span> : le ou la responsable de poursuite d’études, les professeurs, les étudiants et les universités partenaires. </p>
@@ -103,10 +101,9 @@
         <section id="presentation-competences">
             <!--<div class="imgBox">
                 <div class="imgProjetBloc">
-                    <img class="" src="imgNextStudies/issues-board.png" alt="Next Studies Accueil Admin">
+                    <img class="" src="../ressources/img/imgNextStudies/issues-board.png" alt="Next Studies Accueil Admin">
                 </div>  
             </div>-->
-
             <div class="presentation-competences-bloc">
                 <h2 id="titre-competences">Compétences</h2> 
                 <div class="text-competences">
@@ -137,29 +134,9 @@
                     </p>
                 </div>
             </div>
-        
         </section>
-        <div class="bouton-retour-area">
-            <a href="portfolio.html#projets">Retour à la page principale</a>
+        <div class="bouton-retour-bloc">
+            <a href="portfolio.html#projets"><img src="../ressources/img/img_mytho/bouton_retour.png" alt="bouton de retour à la page d'accueil">Page d'accueil</a>
         </div>
-        
-        <!-- FOOTER -->
-        <!-- <footer id="footer">
-            <div class="bloc-contact">
-                <div class="bloc-numTel-Email">
-                    <h2 class="h2_questions">Vous êtes à la recherche d'une personne motivée et prête à s'engager dans votre entreprise ?</h2>
-                    <div class="liens">
-                        <a href="../ressources/pdf/CV_Tamara_Benghezal.pdf" download="CV_Tamara_Benghezal.pdf" target="_blank">Mon CV</a>
-                        <a href="https://www.linkedin.com/in/tamara-benghezal-5a9a5327a" target="_blank">Mon LinkedIn</a>
-                    </div>
-                </div>
-                <div class="separator separatorContact"></div>
-                <div class="bloc-numTel-Email">
-                    <h2>CONTACTONS-NOUS !</h2>
-                    <p>07 68 41 05 77</p>
-                    <p>benghezalt@gmail.com</p>
-                </div>
-            </div>
-        </footer> -->
     </body>
 </HTML>

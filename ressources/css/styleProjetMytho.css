@@ -4,6 +4,10 @@
     couleurs texte : #ffffff;
     couleur span du texte : #a8978b;
     couleur span du texte sur fond beige  : #5b524b;
+
+    jaune : fdb024
+    bleu canard moyen  :277364
+    bleu fonce fond : 092327
     */
 
 /* POLICES */
@@ -23,25 +27,14 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 135px;
 }
 
 /* BODY */
 body {
     margin: auto;
     padding: 0;
-    height: 100vh;
-    /*background:url('images_accueil/fondBlancCercle.jpg');
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: center;*/
-    background-color:#1a1a1a;
-    /* pour effet de soulignage du menu au survol : 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;*/
-    overflow-x: hidden;
-    max-width: 1920px;
-
+    background: #092327;
+    background: linear-gradient(165deg, rgba(9, 35, 39, 1) 56%, rgba(55, 92, 90, 1) 20%);
 }
 
 main {
@@ -71,13 +64,15 @@ header { /* pas sûr que tout soit nécessaire */
 nav {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    justify-content: end;
     align-items: center;
-    padding: 25px 60px;
     max-width: 1920px;
+    width: 350px;
     background: transparent;
     transition: background-color 0.5s ease;
 }
+
+
 
 .surligne {
     color: white;
@@ -103,7 +98,7 @@ nav {
   transform-origin: center;
   height: 1px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   transition: transform 0.4s ease;
 }
 
@@ -115,34 +110,11 @@ nav {
   transform: translateX(-50%) scaleX(1);
 } 
 
-/* Bouton de contact */
-nav #contact {
-    background: #092327;
-    border-radius: 20px;
-    padding: 3px 10px;
-}
-
-nav #contact a {
-    font-family: Poppins;
-    color: #F8F9FA;
-    text-decoration: none;
-    transition: background-color 0.4s ease-in-out;
-}
-
-nav #contact:hover {
-    background-color: #216358;
-    transition: all 0.5s ;
-}
-
-nav #contact:hover a {
-    color: #fff ;
-}
-
 /*logo : TAMARA BENGHEZAL*/
 #logo {
     font-size: 1.6em;
     color: white;
-    font-family: Miagara; 
+    font-family: Poppins; 
     font-weight: 600;
     text-decoration: none;
     position: absolute;
@@ -151,25 +123,22 @@ nav #contact:hover a {
     padding: 0;
 }
 
-#logo:hover{
-    transition: 0.1s ease-in-out; /*a voir pour faire meilleure transition parce que ca ne marche pas pour le moment*/
-    opacity: 50%;
-}
+
 
 
 /* TITRE + TEXTE DE PRSENTATIION DU PROJET */
 
-#presentation-du-projet, #contribution-bloc, #presentation-next-studie, #presentation-competences {
+#presentation-generale-du-projet, #contribution-bloc, #resume-bloc, #presentation-competences {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    background-color: #FDF0E7;
+    background-color: #f9f9f9;
     color: #000000;
 
     gap: 100px;
-    padding: 7% 4%;
+    padding: 5% 4%;
 
     text-align: justify;
     font-family: Poppins;
@@ -179,44 +148,50 @@ nav #contact:hover a {
 }
 
 
-#presentation-du-projet {
+#presentation-generale-du-projet {
     /*background:url('imgNextStudies/next-studies-photo1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;*/
-    padding: 2% 5%;
+    padding: 0 5% 2% 5%;
     margin-top: 0;
     flex-direction: column;
     gap: 0;
     width: 90%;
     clip-path:none;
-    background-color: #1a1a1a;
+    background-color: transparent; /*#1a1a1a; */
     color: #FDF0E7;
 }
 
 #contribution-bloc {
-    background-color: #1a1a1a;
+    background: #092327;
+    background: linear-gradient(165deg, rgba(9, 35, 39, 1) 56%, rgba(55, 92, 90, 1) 120%);
     color: #FDF0E7;
     padding: 5%;
     margin-top: 0;
-
+    gap: 50px;
 }
 
 /* BOUTON DE RETOUR EN HAUT A GAUCHE */
 
-.bouton-retour-area {
-    width: 100%;
+.bouton-retour-bloc {
     max-width: 1920px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 4%;
+    padding-left:4%;
     margin: 0;
-    background-color: none;
+    background: #092327;
+    background: linear-gradient(165deg, rgba(9, 35, 39, 1) 56%, rgba(55, 92, 90, 1) 100%);
     align-items: center;
 }
 
-.bouton-retour-area p {
+.bouton-retour-bloc img {
+    width: 32px;
+    height: 32px;
+}
+
+.bouton-retour-bloc p {
     color:#a8978b;
     font-size: 1.2em;
     font-weight: 700;
@@ -224,52 +199,55 @@ nav #contact:hover a {
     text-indent:0;
 }
 
-.bouton-retour-area a {
-    background-color: #fff;
-    border: 0.2px solid #a8978b;
-    border-radius: 20px;
+.bouton-retour-bloc a {
+    display: inline-flex;
+    align-items: center; /* aligne verticalement image + texte */
+    gap: 8px;  
 
     padding: 10px;
     margin: 30px;
-    width: 250px;
-    text-align: center;
-    color: #5b524b;
+
+    color: #ffffff;
     font-weight: 500;
     font-family: Poppins;
     font-size: 0.8em;
     text-decoration: none;
 }
 
-.bouton-retour-area a:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    background-color: #ffffff;
+.bouton-retour-bloc a:hover {
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); */
+    color: #cfcfcf;
+    /* background-color: #ffffff; */
 }
 
+nav .bouton-retour-bloc {
+    justify-content: end;
+    background:  none;
+}
 /* TITRE */
-#presentation-du-projet #titre-projet, #contribution-bloc #titre-projet, #presentation-next-studie #titre-projet {
+#contribution-bloc #titre-projet, #resume-bloc #titre-projet, #titre-competences {
     width: 100%;
-    text-align: center;
+    text-align: start;
 
-    color: #550511;
+    color: #277364;
     font-size: 3.3em;
     font-weight: 700;
-    font-family: Equila;
+    font-family: Poppins;
     text-decoration: none;
     margin-bottom: 5%;
     text-indent:0;
 }
 
-#presentation-du-projet #titre-projet, #contribution-bloc #titre-projet, #titre-competences {
-    font-size: 3.3em;
+#presentation-generale-du-projet #titre-projet, #contribution-bloc #titre-projet {
     color: #FDF0E7;
     padding-bottom: 0%;
 }
 
-#titre-competences {
-    color: #550511;
+#contribution-bloc #titre-projet {
+    text-align: end;
 }
 
-#presentation-du-projet #titre-projet {
+#presentation-generale-du-projet #titre-projet {
     font-size: 2.3em;
     color: #fff;
     font-family: Poppins;
@@ -280,36 +258,55 @@ nav #contact:hover a {
 
 /* IMAGE */
 
-#contribution-bloc .imgBox, #presentation-next-studie .imgBox  {
+#resume-bloc .imgBox  {
     width: 50%;
     height: 50%;
     margin: 4% 0;
+    display: flex;
+    justify-content: center;
 }
 
-#contribution-bloc .img-contributiuon-bloc, #presentation-next-studie .imgProjetBloc {
+#contribution-bloc .imgBox {
+    width: 40%;
+    height: 50%;
+    margin: 0;
+    display: flex;
+    /* justify-content: center; */
+}
+
+#resume-bloc .imgProjetBloc {
     width: 100%;
     height: 100%;
+    align-items: center;
 }
-#presentation-next-studie .imgProjetBloc img {
+#contribution-bloc .img-contributiuon-bloc {
+    width: 60%;
+    height: 60%;
+    align-items: center;
+}
+
+#resume-bloc .imgProjetBloc img {
     width: 100%;
     margin-left: 50px;
     height: 100%;
     border-radius: 20px 20px 50px 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); */
+    border: solid 10px #277364;
 }
 
 #contribution-bloc .img-contributiuon-bloc img {
     width: 80%;
     height: 80%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); */
+    border: solid 7px #e6d7cd;
     border-radius: 50%;
 }
 
 
 /* PARAGRAPHE */
 
-#presentation-du-projet .presentation-du-projet-bloc {
-    width: 80%;
+#presentation-generale-du-projet .presentation-du-projet-bloc {
+    width: 60%;
     padding: 0 4%;
     text-align: center;
     /*background-color: #1a1a1a;*/
@@ -317,28 +314,36 @@ nav #contact:hover a {
     font-size: 1.0em;
 }
 
-#contribution-bloc .presentation-du-projet-bloc, #presentation-next-studie .presentation-du-projet-bloc {
+#contribution-bloc .presentation-du-projet-bloc, #resume-bloc .presentation-du-projet-bloc {
     width: 35%;
     text-indent:40px;
 }
 
- #presentation-next-studie span, #contribution-bloc span, #presentation-competences span {
-    color: #a8978b;
+ #resume-bloc span, #contribution-bloc span, #presentation-competences span {
+    color: #277364;
 }
 
-#presentation-du-projet span {
-    color : #a8978b;
+#presentation-generale-du-projet span {
+    color : #277364;
 }
 
+.navigation_buttons {
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+
+}
 /* Bouton arrondi avec fleche de la premiere section */
 .rounded-button {
     width: 170px;
     height: 40px;
-    margin: 2%;
-    border: none;
+    border: solid 3px #092327;
     border-radius: 20px;
     background-color: #fff;
-    color: #a8978b;
+    color: #092327;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -349,13 +354,14 @@ nav #contact:hover a {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.rounded-button .arrow {
+/* .rounded-button .arrow {
     color: #a8978b;
-}
+} */
 
 .rounded-button:hover {
-    background-color: #d4cac3;
-    transform: translateY(-2px);
+    background-color: #fdb024;
+    color: #092327;
+    transform: translateY(-1px);
 }
 
 .rounded-button:active {
@@ -364,21 +370,22 @@ nav #contact:hover a {
 }
 
 /* ------------SLIDER ----------------------*/
-.slider_fond {
+.slider_separation {
     background-color: #a8978b;
-    width: 90%;
-    height: 2px;
+    width: 20%;
+    height: 1px;
+    margin-top: 1%;
 }
 
 .slider-container {
     position: relative;
     top: -200%;
     width: 60%;
-    height: 500px; /* Hauteur visible du slider */
+    height: 450px; /* Hauteur visible du slider */
     max-width: 1920px;
     overflow: hidden;
     margin: 2% auto;
-    border: solid 10px #5a5858;/*#dac5b5;*/
+    border: solid 10px #277364;/*#5a5858;/*#dac5b5;*/
     border-radius: 10px;
     background-color: #a8978b;
 }
