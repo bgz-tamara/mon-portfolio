@@ -170,7 +170,7 @@ nav #contact:hover a {
     margin: 0 auto;
     height: 100vh;
     
-    background-image: url('../img/img_accueil_3/banniere-accueil-waving-8.png');
+    background-image: url('../img/img_accueil_3/banniere-accueil-waving.png');
     background-repeat: no-repeat;
     background-size: 75%;
     background-position-y: center;
@@ -353,7 +353,7 @@ path {
     align-items: center;
     /* background-color:  #fdb024; #113837;#1a1a1a; */
     
-    background-image: url('../img/img_accueil_3/fond_qui_suis_je_2.png');
+    background-image: url('../img/img_accueil_3/fond_section_accueil.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: center;
@@ -434,7 +434,6 @@ path {
     align-items: center;
 
     width: 100%;
-    /* gap: 300px; */
     height: 100%;
 }
 #pacours {
@@ -467,23 +466,13 @@ path {
 .liens {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
     width: 50%;
-
-    color: #F8F9FA; /*F8F9FA;*/
-    font-family: Poppins;
-    font-size: 1.0em;
-    text-align: center;
 }
 
 .liensPro {
     justify-content: center;
-    gap: 210px;
+    gap: 70px;
     align-items: flex-start;
-    font-size: 2.0em;
-    height: 100%;
 }
 
 .liensPro a p  {
@@ -491,41 +480,30 @@ path {
 }
 
 .lien-GitHub {
-    padding-left: 180%;
+    padding-left: 25%;
 }
 
 .lien-CV {
-    margin-top: -50px;
-    padding-left: 520px;
+    padding-left: 55%;
 }
 
 .lien-linkedIn {
-    padding-left: 310px;
+    padding-left: 23%;
 }
 
 .liensContact {
-    color: #fdb024; /*F8F9FA;*/
+    font-family: Poppins;
+    font-size: 1.0em;
+    color: #fdb024; 
 }
-/* 
-#presentation-de-soi .liens img {
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-    border-radius: 60px;
-    background-color: #F8F9FA;
-}
-
-#presentation-de-soi .liens .lien-linkedIn a img {
-    width: 110px;
-    height: 110px;
-} */
 
 .vignette_liens img {
-    transform: translateX(-50px);
-    width: 150px;
-    height: 150px;
-  transition: opacity 1.2s ease-out, transform 0.6s ease-out;
+    width: 80%;
+    height: 80%;
+    /* transform: translateX(-50px); */
+    transition: opacity 1.2s ease-out, transform 0.6s ease-out;
 }
+
 
 .vignette_liens {
   opacity: 0;
@@ -534,13 +512,13 @@ path {
 }
 
 .vignette_liens.visible /*img*/ {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
     text-decoration: none;
 }
 
-.vignette_liens /*img:hover*/ {
-  transform: translateX(0) scale(1.05); /* combine les deux */
+.vignette_liens img:hover {
+  transform: scale(1.05); /* combine les deux */
 }
 
 
@@ -927,6 +905,7 @@ path {
 }
 
 #footer .bloc-contact .bloc-numTel-Email .liens {
+    font-family: Poppins;
     display: flex;
     flex-direction: column;
     align-items: center;

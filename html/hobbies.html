@@ -7,99 +7,224 @@
         <title>Autres</title>
     </head>
     <body>
-        <!-- HEADER -->
         <header>
             <nav class="navbar"> <!--menu déroulant-->
                 <a href="portfolio.html#" id="logo">Tamara Benghezal</a>
-
-                <div class="lien-accueil"><a class="surligne" href="#presentation-de-soi">QUI SUIS-JE ?</a></div>
-                <div class="projets"><a class="surligne" href="#projet">PROJETS</a>
-                </div>
-                <div class="parcours"><a class="surligne" href="#pacours">PARCOURS</a>
+                <div class="accueil">
+                    <a class="surligne" href="portfolio.html">ACCUEIL</a></div>
                 </div>
                 <div class="parcours"><a class="surligne" href="hobbies.html">AUTRES</a>
                 </div>
+                <div class="parcours">
+                    <a class="surligne" href="apprentissages.html">APPRENTISSAGES</a>
                 </div>
-                <div class="parcours"><a class="surligne" href="apprentissages.html">APPRENTISSAGES</a>
-                </div>
-
-                <div id="contact"><a href="#footer">CONTACT</a></div>
+                <div id="contact"><a href="apprentissages.html#footer">CONTACT</a></div>
             </nav>
         </header>
-        <main>
-            <section id="premiere-section">
-                <div id="div-texte">
-                    <h1>Je suis passionnée par l'apprentissage</h1>
-                    <h2>En plus d'être développeuse je porte plusieurs casquettes. Alternante, déléguée de classe, secrétaire adjointe à l'AGES, marraine de 1ère et 2ème année, joueuse de ukulele et de piano, pratiquante de badminton depuis une dizaine d'année, étudiante une double diplômation de management, Bref. Ca fait beaucoup.</h2>
-                    <h2>Je profite donc de cette page pour vous parler de toutes ces choses que j'aime faire en plus de mes études principales.</h2>
+
+        <section id="premiere-section">
+            <h1 class="titre-hero">Je suis passionnée par <br>l'apprentissage</h1>
+            <p class="sous-titre">Découvrez mon monde en dehors du BUT informatique</p>
+            
+            <nav class="conteneur-badges">
+                <a href="#alternance" class="badge">Alternance</a>
+                <a href="#engagement" class="badge">Engagement étudiant</a>
+                <a href="#sport" class="badge">Sport</a>
+                <a href="#license" class="badge">Licence de Management</a>
+            </nav>
+        </section>
+
+        <section id="banniere-citation">
+            <div class="texte-intro">
+                <p>
+                    En plus d'être développeuse je porte plusieurs casquettes. Alternante, 
+                    déléguée de classe, secrétaire adjointe à l'AGES, marraine de 1ère et 2ème année, 
+                    joueuse de ukulele et de piano, pratiquante de badminton depuis une dizaine d'année, 
+                    effectuant une double diplomation de management. En somme, je fais plein de choses à côté du BUT.
+                </p>
+                <p>
+                    Je profite donc de cette page pour vous parler de toutes ces choses que 
+                    j'aime faire en plus de mes études principales.
+                </p>
+            </div>
+            <div class="illustration-parcours">
+                <img src="../ressources/img/img_hobbies/espace-reserve.png" alt="Icon générique de la notion de parcours">
+            </div>
+        </section>
+
+        <main class="contenu-principal">
+            
+            <article id="alternance" class="carte-projet">
+                <div class="div-image-1">
+                    <img src="../ressources/img/img_hobbies/anerom.jpeg" alt="Poste de travail chez Anerom">
                 </div>
-                <div class="div-image">
-                    <!-- <img src="../ressources/img/img_accueil_3/moi_codant.png" alt="image IA Tamara Benghezal"> -->
+                <div class="corps-carte-1">
+                    <!-- CARROUSSEL -->
+                    <div class="glisseur-contenu">
+                        <div class="slide" id="projet-1">
+                            <h2 class="titre-carte">Un an d’alternance chez ANEROM</h2>
+                            <p>Depuis quelques mois, je suis alternante chez ANEROM. Je joue le 
+                            rôle de développeuse web et logiciel. Mon entreprise est une PME 
+                            prestataires dans le domaine du développement informatique. 
+                            Nous sommes donc tous développeurs.</p>
+                        </div>
+                        <div class="slide" id="projet-2">
+                            <h2 class="titre-carte">Avant tout une expérience humaine</h2>
+                            <p>Pour moi, travailler en entreprise va bien au-delà d'un strict apprentissage technique. Lorsque je rentre dans une entreprise, je rentre en contact avec des personnes. Chacune d'entre elles a son tempérament, son expérience et sa proximité hiérarchique avec moi.</p>
+                            <p>Pendant mon stage ou pendant mon alternance, j'ai rapidement vu ce que toutes ces personnes, alternant ou en CDI, depuis 1 an, 5 ans ou 20 ans, en développement, administration système, ou autres professions du milieu informatique, avaient ÉNORMEMENT à m'apporter. Plus que n'importe quel cours théorique.</p>
+                        </div>
+                    </div>
+                    <nav class="navigation-points">
+                        <span class="point active"></span> <span class="point"></span>
+                    </nav>
+                    <!-- FIN DU CARROUSSEL -->
                 </div>
-            </section>
-            <section id="banniere-citation">
-                <p>
-                    <em>“Coffee is a language in itself.”</em><br>
-                    — Jackie Chan
-                </p>
-            </section>
-            <!-- === SECTION ALTERNANCE === -->
-            <section class="content-section alternance">
-            <div class="section-image">
-                <img src="../ressources/img/img_hobbies/anerom.jpeg" alt="Tamara Benghezal en alternance">
-            </div>
-            <div class="section-text">
-                <h2>Alternance</h2>
-                <p>
-                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                </p>
-            </div>
-            </section>
+            </article>
 
-            <!-- === SECTION BDE === -->
-            <section class="content-section bde reverse">
-            <div class="section-text">
-                <h2>BDE</h2>
-                <p>
-                Aaaah, l'AGES.. QUelle histooire. <br>
-                J'ai commencé mon aventure là-bas en tant qu'assistante de communication. J'ai toujours aimé le front donc je me disais que faire des affiches serait fun. Sauf que, je ne m'attendais pas à tomber sur tout un tas de personne qui passerait de longues minutes à m'expliquer pourquoi mon affiche n'est pas assez lumineuse pour l'un, un peu trop fonçée pour l'autre, qu'elle est trop grande, mais enfaite trop petite, que le message est trop implicite mais que le message est un peu trop explicite après réflexion, il faut adoucir...<br>
-                J'ai changé de poste.<br>
-                Actuellement je suis secrétaire adjointe, je travaille étroitement avce mon collègue secrétaire qui plus est déléguée avec moi en cours. C'est super, je peux organiser des évènements entiers et cela me fait super plaisir. Je suis d'ailleurs en charge de l'organisation des 2 soirées jeux de début décembre ! J'ai très hâte qu'elles aient lieu.<br>
-                </p>
-            </div>
-            <div class="section-image">
-                <img src="../ressources/img/img_hobbies/journee_ouverture_BDE.jpeg" alt="Tamara Benghezal - BDE">
-            </div>
-            </section>
+            <article id="engagement" class="carte-projet carte-inversee">
+                <div class="corps-carte-2">
+                    <!-- CARROUSSEL -->
+                    <div class="glisseur-contenu">
+                        <div class="slide" id="projet-1">
+                            <h2 class="titre-carte">Secrétaire adjointe à l’AGES</h2>
+                            <p> L'AGES est l'acronyme d'Association Générale des Étudiants Sétois. 
+                            Je fais donc partie d'un groupe d'étudiants qui œuvre, en collaboration 
+                            avec les infrastructures de Sète, afin de rendre la ville plus accessible 
+                            et vivante pour les étudiants.</p>
+                            <p> Au-delà de mon rôle de secrétaire et à l'instar de chaque autre membre de l'association, je propose et mets en place des projets pour les étudiants.</p>
+                        </div>
+                        <div class="slide" id="projet-2">
+                            <h2 class="titre-carte">La soirée jeux</h2>
+                            <p>J'ai eu la chance de pouvoir organiser un événement qui a réuni près de 40 personnes autour de l'univers du jeu. L'ambiance était conviviale et vraiment amusante. Je suis marquée ar le souvenir du plaisir d'avoir partagé ce moment avec l'association et les étudiants mais je retiens surtout tout ce que j'ai appris en termes d'organisation et de gestion de projet.</p>
+                            <p>Ce n'était vraiment pas facile à organiser, étant une première édition. Entre gérer les achats et le matériel, respecter des délais serrés, organiser le travail d’équipe et coordonner la communication avec plusieurs établissements... chaque détail a compté pour faire de ce "sprint" une réussite.</p>
+                        </div>
+                    </div>
+                    <nav class="navigation-points">
+                       <span class="point active"></span> <span class="point"></span>
+                    </nav>
+                    <!-- FIN DU CARROUSSEL -->
+                </div>
+                <div class="div-image-2">
+                    <img src="../ressources/img/img_hobbies/journee_ouverture_BDE.jpeg" alt="Activités avec l'AGES">
+                </div>
+            </article>
 
-            <!-- === SECTION SPORT === -->
-            <section class="content-section sport">
-            <div class="section-text">
-                <h2>Sport</h2>
-                <p>
-                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                </p>
-            </div>
-            <div class="section-image">
-                <img src="../ressources/img/img_hobbies/anerom.jpeg" alt="Tamara Benghezal - Sport">
-            </div>
-            </section>
+            <article id="sport" class="carte-projet">
+                <div class="div-image-1">
+                    <img src="../ressources/img/img_hobbies/20161130_163550-1.jpg" alt="Moi en tenue de badminton au collège">
+                </div>
+                <div class="corps-carte-1">
+                     <!-- CARROUSSEL -->
+                    <div class="glisseur-contenu">
+                        <div class="slide" id="projet-1">
+                            <h2 class="titre-carte">Dix ans de badminton pour un un niveau... pas si terrible...</h2>
+                            <p> Je ne joue pas pour gagner (ça se voit), je joue parce que j'adore faire du badminton. Je pratique ce sport depuis que j'ai 10 ans et je n'ai jamais cessé d'aimer y jouer. J'ai cumulé 5 ans d'AS (association sportive) au collège et au lycée. Puis 2 ans, en club, avant d'avoir mon bac et enfin, quelques séances par-ci par-là depuis que je suis dans le supérieur, notamment grâce au SUAPS. </p>
+                            <p> Les bases de ce sport sont ancrées en moi. Je ne dis jamais non à une partie :)</p>
+                        </div>
+                        <!-- <div class="slide" id="projet-2">
+                            <h2 class="titre-carte">La soirée jeux</h2>
+                            <p>J'ai eu la chance de pouvoir organiser un événement qui a réuni près de 40 personnes autour de l'univers du jeu. L'ambiance était conviviale et vraiment amusante. Je suis marquée ar le souvenir du plaisir d'avoir partagé ce moment avec l'association et les étudiants mais je retiens surtout tout ce que j'ai appris en termes d'organisation et de gestion de projet.</p>
+                            <p>Ce n'était vraiment pas facile à organiser, étant une première édition. Entre gérer les achats et le matériel, respecter des délais serrés, organiser le travail d’équipe et coordonner la communication avec plusieurs établissements... chaque détail a compté pour faire de ce "sprint" une réussite.</p>
+                        </div> -->
+                    </div>
+                    <nav class="navigation-points">
+                        <span class="point active"></span> <!--<span class="point"></span> -->
+                    </nav>
+                    <!-- FIN DU CARROUSSEL -->
+                </div>
+            </article>
 
-            <!-- === SECTION LICENCE MANAGEMENT === -->
-            <section class="content-section license reverse">
-            <div class="section-text">
-                <h2>Licence MTS - IAE Montpellier</h2>
-                <p>
-                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
-                </p>
-            </div>
-            <div class="section-image">
-                <img src="../ressources/img/img_hobbies/anerom.jpeg" alt="Tamara Benghezal - Licence MTS">
-            </div>
-            </section>
+            <article id="license" class="carte-projet carte-inversee">
+                <div class="corps-carte-2">
+                    <!-- CARROUSSEL -->
+                    <div class="glisseur-contenu">
+                        <div class="slide" id="management-1">
+                            <h2 class="titre-carte">Licence de Management à l'IAE</h2>
+                            <p>
+                                J'ai choisi de m'inscrire, pour la dernière année de mon BUT informatique, à une licence de management, pour acquérir des compétences solides en gestion d'équipe, quelques bases en entrepreneuriat, plus de connaissances en droit, comptabilité, économie, finance, marketing, ERP et toutes les compétences d'une personne ayant une licence en Management. À terme, j'aimerais beaucoup gérer des équipes en entreprise ou avoir ma propre boîte.
+                            </p>
+                        </div>
+                        <div class="slide" id="management-2">
+                            <h2 class="titre-carte">Des compétences nécessaires pour l'avenir</h2>
+                            <p>
+                                Il y a beaucoup de personnes dans ma classe qui appuient sur le fait que notre formation est un "BUT Informatique" et que, dans ce cadre, il est incohérent que nous étudions autant de matières "non-techniques" car en effet, nous avons pendant 3 ans des cours de droit, de comptabilité, d'économie, de communication et de management.</p>
+                            <p>
+                                Personnellement je pense que sans ces cours là, nous ne serions pas les développeurs que nous sommes aujours'hui. Si nous savons comment travailler en équipe, comment nous vendre à un recruteur, que nous connaissont les limites juridiques de nos créations, que nous comprenons des demandes de clients comptables ou que nous avons tout simplement conscience du fonctionnement du monde professionnel, c'est vraiment grâce à ces cours.</p>
+                        </div>
+                    </div>
+                    <nav class="navigation-points">
+                       <span class="point active"></span> <span class="point"></span>
+                    </nav>
+                    <!-- FIN DU CARROUSSEL -->
+                    
+                </div>
+                <div class="div-image-2">
+                    <img src="../ressources/img/img_hobbies/parking_sete.jpeg" alt="cours de L3 MTS">
+                </div>
+            </article>
+
         </main>
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="bloc-contact">
+                <div class="bloc-numTel-Email">
+                    <h2 class="h2_questions">Vous êtes à la recherche d'une personne motivée et prête à s'engager dans votre entreprise ?</h2>
+                    <div class="liens liensContact">
+                        <a href="../ressources/pdf/CV_2026-01_Tamara_Benghezal.pdf" download="CV_Tamara_Benghezal.pdf" target="_blank">Mon CV</a>
+                        <a href="https://www.linkedin.com/in/tamara-benghezal-5a9a5327a" target="_blank">Mon LinkedIn</a>
+                    </div>
+                </div>
+                <div class="separator separatorContact"></div>
+                <div class="bloc-numTel-Email">
+                    <h2>CONTACTONS-NOUS !</h2>
+                    <p>07 68 41 05 77</p>
+                    <p>benghezalt@gmail.com</p>
+                </div>
+            </div>
+        </footer>
     </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // On sélectionne tous les blocs de projet
+            const blocsProjets = document.querySelectorAll('.carte-projet');
+
+            blocsProjets.forEach(bloc => {
+                const glisseur = bloc.querySelector('.glisseur-contenu');
+                const points = bloc.querySelectorAll('.point');
+                const slides = bloc.querySelector('.glisseur-contenu').children;
+
+                // --- 1. CLIC SUR LES POINTS ---
+                points.forEach((point, index) => {
+                    point.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        
+                        const positionH = slides[index].offsetLeft;
+                        glisseur.scrollTo({
+                            left: positionH,
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+
+                // --- 2. SURVEILLANCE DU SCROLL (Intersection Observer) ---
+                const options = {
+                    root: glisseur,
+                    threshold: 0.6
+                };
+
+                const observateur = new IntersectionObserver((entrees) => {
+                    entrees.forEach(entree => {
+                        if (entree.isIntersecting) {
+                            const index = Array.from(slides).indexOf(entree.target);
+                            // On ne modifie que les points à l'intérieur de CE bloc
+                            points.forEach(p => p.classList.remove('active'));
+                            if(points[index]) points[index].classList.add('active');
+                        }
+                    });
+                }, options);
+
+                Array.from(slides).forEach(slide => observateur.observe(slide));
+            });
+        });
+    </script>
 </HTML>

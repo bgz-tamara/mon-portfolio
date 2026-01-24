@@ -39,11 +39,11 @@ body {
 }
 
 .imageEnTete {
-    background:url('../img/img_apprentissage/banniere-app-diff-2.png');
+    background:url('../img/img_apprentissage/banniere-app-diff.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 10%;
+    padding-top: 8%;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -111,14 +111,15 @@ body {
 .titre-apprentissages {
     color: #fdb024;
     font-family: Poppins;
-    font-size: 2.5em;
-    margin: 4% 0 0;
-    padding-left: 120px;
+    font-size: 2.2rem;
+    margin: 1% 0 0;
+    padding: 0 0 0 120px;
     width: 60%;
     text-wrap: wrap;
 }
 
 .titre {
+    line-height: 1.1em;
     opacity: 0;
     transform: translateY(30px);
     transition: transform 1.0s ease-out, opacity 1.0s ease-out;
@@ -131,7 +132,7 @@ body {
     color: #F8F9FA;
     font-family: Poppins;
     text-align: start;
-    font-size: 1.1em;
+    font-size: 1.0rem;
     font-weight: light;
     opacity: 0;
     transform: translateY(30px);
@@ -147,8 +148,8 @@ h2 {
   color: #21332F;
   font-family: Poppins;
   text-align: center;
-  font-size: 1.5em;
-  padding: 40px 0;
+  font-size: 1.4rem;
+  padding: 40px 0 30px;
   transition: transform 1.0s ease-out, opacity 1.0s ease-out;
 }
 
@@ -160,7 +161,7 @@ h2 {
   color: #21332F;
   font-family: Poppins;
   text-align: center;
-  font-size: 1.0em;
+  font-size: 1.0rem;
 }
 
 .p1, .p_maitrise {
@@ -168,7 +169,7 @@ h2 {
   font-family: Poppins;
   text-align: justify;
   text-indent: 5%;
-  font-size: 1.1em;
+  font-size: 1.0rem;
 }
 
 .p_maitrise {
@@ -202,4 +203,68 @@ h2 {
   padding: 1%;
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/*////////////// FOOTER ////////////// */
+
+#footer {
+    background-color: #000000;
+    height: 400px;
+    margin: 0;
+}
+
+#footer .bloc-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: #000000;
+}
+
+#footer .bloc-contact .bloc-numTel-Email {
+    margin: 7%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+
+
+#footer .bloc-contact .bloc-numTel-Email h2 {
+    color: #FDF0E7;
+    text-align: center;
+    font-size: 2em;
+}
+
+#footer .bloc-contact .bloc-numTel-Email .h2_questions {
+    font-size: 1.6em;
+}
+
+#footer .bloc-contact .bloc-numTel-Email .liens {
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+}
+
+#footer .bloc-contact .bloc-numTel-Email p {
+    color: #fdb024;
+}
+
+#footer .bloc-contact .bloc-numTel-Email .liens a {
+    text-decoration: none;
+    color: #fdb024;
+    font-size: 1.2em;
+    padding: 2% 0;
+}
+#footer .bloc-contact .bloc-numTel-Email .liens a:hover {
+    color: #71a49a;
+
 }
