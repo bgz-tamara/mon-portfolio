@@ -23,7 +23,7 @@
     src: url(../font/font-equila/Equila.otf);
 }
 
- /* HTML */
+/* HTML */
 
 html {
     scroll-behavior: smooth;
@@ -50,7 +50,7 @@ main {
 header { /* pas sûr que tout soit nécessaire */
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     top:0;
     width: 100%;
     max-width: 1920px;
@@ -103,7 +103,7 @@ nav {
 }
 
 .surligne.noir::after {
-  background-color: black;
+    background-color: black;
 }
 
 .surligne:hover::after {
