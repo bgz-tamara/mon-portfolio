@@ -169,7 +169,7 @@ nav {
     color: #FDF0E7;
     padding: 5%;
     margin-top: 0;
-    gap: 50px;
+    justify-content: space-around;
 }
 
 /* BOUTON DE RETOUR EN HAUT A GAUCHE */
@@ -239,7 +239,7 @@ nav .bouton-retour-bloc {
 }
 
 #presentation-generale-du-projet #titre-projet, #contribution-bloc #titre-projet {
-    color: #FDF0E7;
+    color: #f9f9f9;
     padding-bottom: 0%;
 }
 
@@ -249,7 +249,7 @@ nav .bouton-retour-bloc {
 
 #presentation-generale-du-projet #titre-projet {
     font-size: 2.3em;
-    color: #fff;
+    color: #f9f9f9;
     font-family: Poppins;
     padding: 0;
     margin: 0 auto;
@@ -280,8 +280,8 @@ nav .bouton-retour-bloc {
     align-items: center;
 }
 #contribution-bloc .img-contributiuon-bloc {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
     align-items: center;
 }
 
@@ -295,11 +295,12 @@ nav .bouton-retour-bloc {
 }
 
 #contribution-bloc .img-contributiuon-bloc img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 50px 10px;
     /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); */
     border: solid 7px #e6d7cd;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 
